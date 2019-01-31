@@ -31,23 +31,23 @@ SW[0] is x, SW[1] is y, SW[2] is the select line and LED[0] is the output m. SW[
 
 #### **Questions**/Tasks
 
-*In the rtl schematic screen shot, the two **and gates** are connected to select and not select. Describe what they are doing in terms of what a mux does.*
+*In the rtl schematic screen shot, the two **and gates** are connected to select and not select. Describe what they are doing in terms of what a mux does.* Sw[2] is selecting. When sw[2] is in position 0, The led will light up if sw[0] is 1 and not light up if sw[0] is 0. When sw[2] is in position 1,  The led will light up if sw[1] is 1 and not light up if sw[1] is 0.
 
-*In the rtl schematic screen shot, what does the **or gate** do in terms of what a mux does?*
+*In the rtl schematic screen shot, what does the **or gate** do in terms of what a mux does? * The OR gate will light up the LED if sw[2] selects a switch that carries 1. 
 
-*How does the schematic change after running synthesis?*
+*How does the schematic change after running synthesis?*  It changes to screen shot 2 (Synthesis(2)). The software "symplifies" it. 
 
-*After running synthesis and implementation, clicking on synthesis under RTL, synthesis and Implementation continues to display the LUT based diagram. Not the gate based diagram. Why? Form a reasonable, non-trivial, relevant hypothesis.* 
+*After running synthesis and implementation, clicking on synthesis under RTL, synthesis and Implementation continues to display the LUT based diagram. Not the gate based diagram. Why? Form a reasonable, non-trivial, relevant hypothesis.*  Because the software thinks it is more direct like this. It looks more organized.
 
- *The black and white design window appears first after running which step of the workflow?*
+ *The black and white design window appears first after running which step of the workflow?* After running implametation.
 
-*How what can you click on to see a region of the device window change from some color to white?*
+*How what can you click on to see a region of the device window change from some color to white?* Clicking on Leaf Cells under Netlist.
 
-*White arrows in the screen shot above are helping us see what?* 
+*White arrows in the screen shot above are helping us see what?*  Helping us see where they physically are, om the board.
 
-*How does Data flow in the fpga from left to right, right to left, bottom up, top down?*
+*How does Data flow in the fpga from left to right, right to left, bottom up, top down?* Left to right and top down.
 
-*What is the verilog symbol for the white line going up at an angle in the device diagram?*
+*What is the verilog symbol for the white line going up at an angle in the device diagram?* input / output
 
 
 
@@ -75,17 +75,17 @@ One select line now selects between two pair of inputs and displays one of the p
 
 #### Questions/Tasks
 
-*Explain how to zoom in on the above Device Screen Shot.*
+*Explain how to zoom in on the above Device Screen Shot.* Go on "device" and click making a rectangle around the region you want to zoom at.
 
-*Do you see pictures of muxes in the Device Screen Shot? Are they used?*
+*Do you see pictures of muxes in the Device Screen Shot? Are they used?* Yes, but they don't seem to be used.
 
-*Which stage of the work flow choose the specific LUT above?*
+*Which stage of the work flow choose the specific LUT above?* Run implementation / open implemented design
 
-*Which stage of the work flow chooses the green lines?*
+*Which stage of the work flow chooses the green lines?* Run implementation / open implemented design
 
-*What do the white lines represent?* 
+*What do the white lines represent?*  inpus / output
 
-*What do the spots where white lines cross represent?*
+*What do the spots where white lines cross represent?* nothing
 
 ## lab1_2_mux2-1-tristate
 
