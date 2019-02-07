@@ -67,12 +67,18 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint C:/Users/FoersterGame/Documents/GitHub/ENES247/lab1-mux/lab1_4_2-mux2-1inSequence/lab1_4_2-mux2-1inSequence.runs/impl_1/mux_3_to_1_instantiation.dcp
-  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES247/lab1-mux/lab1_4_2-mux2-1inSequence/lab1_4_2-mux2-1inSequence.cache/wt [current_project]
-  set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/ENES247/lab1-mux/lab1_4_2-mux2-1inSequence/lab1_4_2-mux2-1inSequence.xpr [current_project]
-  set_property ip_output_repo C:/Users/FoersterGame/Documents/GitHub/ENES247/lab1-mux/lab1_4_2-mux2-1inSequence/lab1_4_2-mux2-1inSequence.cache/ip [current_project]
+  set_param synth.incrementalSynthesisCache C:/Users/SET253-22U.HCCMAIN/Downloads/ENES247-master/ENES247-master/lab1-mux/lab1_4_2-mux2-1inSequence/.Xil/Vivado-1220-SET253-22C/incrSyn
+  create_project -in_memory -part xc7a100tcsg324-1
+  set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir C:/Users/SET253-22U.HCCMAIN/Downloads/ENES247-master/ENES247-master/lab1-mux/lab1_4_2-mux2-1inSequence/lab1_4_2-mux2-1inSequence.cache/wt [current_project]
+  set_property parent.project_path C:/Users/SET253-22U.HCCMAIN/Downloads/ENES247-master/ENES247-master/lab1-mux/lab1_4_2-mux2-1inSequence/lab1_4_2-mux2-1inSequence.xpr [current_project]
+  set_property ip_output_repo C:/Users/SET253-22U.HCCMAIN/Downloads/ENES247-master/ENES247-master/lab1-mux/lab1_4_2-mux2-1inSequence/lab1_4_2-mux2-1inSequence.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet C:/Users/SET253-22U.HCCMAIN/Downloads/ENES247-master/ENES247-master/lab1-mux/lab1_4_2-mux2-1inSequence/lab1_4_2-mux2-1inSequence.runs/synth_1/mux_3_to_1_instantiation.dcp
+  read_xdc C:/Users/SET253-22U.HCCMAIN/Downloads/ENES247-master/ENES247-master/lab1-mux/lab1_4_2-mux2-1inSequence/lab1_4_2-mux2-1inSequence.srcs/constrs_1/imports/lab1_4_2-mux2-1inSequence/Nexys4DDR_Master.xdc
+  link_design -top mux_3_to_1_instantiation -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
