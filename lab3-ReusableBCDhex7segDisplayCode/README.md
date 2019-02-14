@@ -78,7 +78,7 @@ Carry Logic Being used
 
 #### Testing
 
-SW[0] switches between first and last 16 digits. When sw[0] is in position 1, the digits are moving too quick, so cannot see the lights changing (they're on all the time). When SW[0] is in position 1, can see the left side lights changing. Can see the counting. SW[1] resets.
+SW[0] switches between first and last 16 digits. When sw[0] is in position 1,it shows the first 16 digits. The digits are moving too quick, so cannot see the lights changing (they're on all the time). When SW[0] is in position 1, it shows the last (most left) 16 digits. Can see the left side lights changing. Can see the counting. SW[1] resets.
 
 ___
 
