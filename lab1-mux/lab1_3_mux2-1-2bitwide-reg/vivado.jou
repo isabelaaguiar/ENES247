@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Feb 14 14:28:25 2019
+# Process ID: 2656
+# Current directory: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-2bitwide-reg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6188 C:\Users\SET253-08U.HCCMAIN\Documents\GitHub\ENES247\lab1-mux\lab1_3_mux2-1-2bitwide-reg\lab1_3_mux2-1-2bitwide-reg.xpr
+# Log file: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-2bitwide-reg/vivado.log
+# Journal file: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-2bitwide-reg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-2bitwide-reg/lab1_3_mux2-1-2bitwide-reg.xpr
+update_compile_order -fileset sources_1
+reorder_files -fileset constrs_1 -after C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-2bitwide-reg/lab1_3_mux2-1-2bitwide-reg.srcs/constrs_1/imports/lab1_3_mux2-1-2bitwide-reg/Nexys4DDR_Master.xdc C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-2bitwide-reg/lab1_3_mux2-1-2bitwide-reg.srcs/constrs_1/imports/lab1_3_mux2-1-2bitwide-reg/Nexys4DDR_Master.xdc
