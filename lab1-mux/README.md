@@ -383,6 +383,8 @@ The simple mux circuits explored in this lab were created with various forms of 
 
 #### Testing
 
+
+
 #### Questions/Tasks
 
 *How is this code different from the previous project?*
@@ -413,6 +415,8 @@ One of the ways we know what is going on is to predict Vivado's behavior. This c
 ### Port Diagram
 
 ![image](lab1_4_2-mux2-1_port.png)
+
+
 
 
 
