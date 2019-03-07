@@ -182,11 +182,13 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 #### Testing
 
+
+
 #### Questions/Tasks
 
-*tb stands for what?*
+*tb stands for what?* testbench
 
-*What verilog code is the top level module, the test or the circuit?*
+*What verilog code is the top level module, the test or the circuit?* 
 
 *The verilog code shares the same port interface as the previous 2bit wide circuit. How is the verilog code different?*
 
@@ -297,9 +299,19 @@ Now answer these questions:
 
 #### RTL Schematic Screen shot
 
+![image](lab1_3_mux2-1-1bitwidertl.png)
+
 #### Synthesis Schematic Screen shot
 
+![image](lab1_3_mux2-1-1bitwideSYNTHESIS.png)
+
+
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![image](lab1_3_mux2-1-1bitwideIMPLEMENTATION.png)
+
+
 
 #### Testing
 
@@ -347,11 +359,27 @@ The simple mux circuits explored in this lab were created with various forms of 
 
 #### Verilog Code
 
+![image](lab1_3_mux2-1-2_verilog.png)
+
+
+
 #### RTL Schematic Screen shot
+
+![image](lab1_3_mux2-1-2_RTL.png)
+
+
 
 #### Synthesis Schematic Screen shot
 
+![image](lab1_3_mux2-1-2_SYNTHESIS.png)
+
+
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![image](lab1_3_mux2-1-2_implementation.png)
+
+
 
 #### Testing
 
@@ -384,7 +412,7 @@ One of the ways we know what is going on is to predict Vivado's behavior. This c
 
 ### Port Diagram
 
-
+![image](lab1_4_2-mux2-1_port.png)
 
 
 
@@ -392,15 +420,19 @@ One of the ways we know what is going on is to predict Vivado's behavior. This c
 
 #### RTL Schematic Screen shot
 
-![](C:\Users\SET253-22U.HCCMAIN\Downloads\ENES247-master\ENES247-master\lab1-mux\RTL Schematic Screen shot_7.png)
-
-
+![image](lab1_4_2-mux2-1_RTL.png)
 
 #### Synthesis Schematic Screen shot
 
-![](C:\Users\SET253-22U.HCCMAIN\Downloads\ENES247-master\ENES247-master\lab1-mux\Synthesis Schematic 7.png)
+![image](lab1_4_2-mux2-1_SYNTHESIS.png)
+
+
 
 #### Implementation Device screen shot zoomed in on something interesting
+
+![image](lab1_4_2-mux2-1_IMPLEMENTATION.png)
+
+
 
 #### Testing
 

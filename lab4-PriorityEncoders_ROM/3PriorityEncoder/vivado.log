@@ -27,3 +27,25 @@ launch_runs impl_1 -jobs 2
 Run output will be captured here: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/3PriorityEncoder.runs/synth_1/runme.log
 [Thu Mar  7 15:32:25 2019] Launched impl_1...
 Run output will be captured here: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/3PriorityEncoder.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1565.863 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1565.863 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1565.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1674.879 ; gain = 929.988
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  7 16:03:11 2019...

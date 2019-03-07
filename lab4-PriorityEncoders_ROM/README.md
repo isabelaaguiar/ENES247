@@ -4,6 +4,8 @@ One goal might be to use the primitives within the FPGA CLB. Chapter 3 of the [V
 
 #### Port Diagram
 
+![img](LUTMUXport.PNG)
+
 
 
 
@@ -34,7 +36,9 @@ One goal might be to use the primitives within the FPGA CLB. Chapter 3 of the [V
 
 #### Testing
 
- 
+ LED[0] and LED[1] are normally on.
+
+The HEX number : F003355FF, in binary is 1111 0000 0000 0011 0011 0101 0101 1111 1111. LEDs go off and on based on those numbers. The numbers corresponding to the positions where the 1's are will turn on the  LED. Ex: Position 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 13... Corresponding to 2^0. 2^1, 2^2, etc...
 
 ___
 
@@ -93,6 +97,8 @@ ___
 ## 2Decoder
 
 #### Port Diagram
+
+
 
 #### Verilog Code
 

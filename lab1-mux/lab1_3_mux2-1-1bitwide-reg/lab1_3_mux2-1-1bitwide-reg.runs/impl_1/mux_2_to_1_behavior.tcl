@@ -60,24 +60,21 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache C:/Users/FoersterGame/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13108-DESKTOP-KB2R4MG/incrSyn
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.cache/wt [current_project]
-  set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.xpr [current_project]
-  set_property ip_output_repo C:/Users/FoersterGame/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.cache/wt [current_project]
+  set_property parent.project_path C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.xpr [current_project]
+  set_property ip_output_repo C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/FoersterGame/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.runs/synth_1/mux_2_to_1_behavior.dcp
-  read_xdc C:/Users/FoersterGame/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.srcs/constrs_1/imports/lab1_3_mux2-1-1bitwide-reg/Nexys4DDR_Master.xdc
+  add_files -quiet C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.runs/synth_1/mux_2_to_1_behavior.dcp
+  read_xdc C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.srcs/constrs_1/imports/lab1_3_mux2-1-1bitwide-reg/Nexys4DDR_Master.xdc
   link_design -top mux_2_to_1_behavior -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
