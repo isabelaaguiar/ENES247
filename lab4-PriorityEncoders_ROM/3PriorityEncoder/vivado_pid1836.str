@@ -1,0 +1,139 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 1836
+License: Customer
+
+Current time: 	Thu Mar 07 15:12:33 EST 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 28 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	SET253-01U
+User home directory: C:/Users/SET253-01U.HCCMAIN
+User working directory: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/SET253-01U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/SET253-01U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/SET253-01U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/vivado.log
+Vivado journal file location: 	C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/vivado.jou
+Engine tmp dir: 	C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/.Xil/Vivado-1836-SET253-01C
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	156 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 616 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\SET253-01U.HCCMAIN\Documents\GitHub\ENES247\lab4-PriorityEncoders_ROM\3PriorityEncoder\3PriorityEncoder.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/3PriorityEncoder.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/3PriorityEncoder.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder' INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-09U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 90 MB (+92009kb) [00:00:09]
+// [Engine Memory]: 642 MB (+521685kb) [00:00:09]
+// [GUI Memory]: 106 MB (+11504kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  3154 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 720 MB. GUI used memory: 52 MB. Current time: 3/7/19, 3:12:37 PM EST
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 736.125 ; gain = 142.918 
+// [Engine Memory]: 720 MB (+47621kb) [00:00:13]
+// Project name: 3PriorityEncoder; location: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 1177 seconds
+closeMainWindow("3PriorityEncoder - [C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/3PriorityEncoder.xpr] - Vivado 2018.3"); // cp
+// A (cp): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Exit Vivado"); // A (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar  7 15:32:25 2019] Launched synth_1... Run output will be captured here: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/3PriorityEncoder.runs/synth_1/runme.log [Thu Mar  7 15:32:25 2019] Launched impl_1... Run output will be captured here: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/3PriorityEncoder.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED

@@ -4,13 +4,33 @@ One goal might be to use the primitives within the FPGA CLB. Chapter 3 of the [V
 
 #### Port Diagram
 
+
+
+
+
 #### Verilog Code
+
+![img](LUTMUXverilog.PNG)
+
+
 
 #### RTL Schematic Screen shot
 
+![img](LUTMUXrtl.PNG)
+
 #### Synthesis Schematic Screen shot
 
+![img](LUTMUXsynthesis.PNG)
+
+
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![img](LUTMUXimplementation.PNG)
+
+
+
+
 
 #### Testing
 

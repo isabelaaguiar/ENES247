@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-09U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/3PriorityEncoder.runs/synth_1'
+HD_PWD='C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab4-PriorityEncoders_ROM/3PriorityEncoder/3PriorityEncoder.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

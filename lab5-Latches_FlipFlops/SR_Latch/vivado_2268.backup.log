@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar  7 14:51:32 2019
+# Process ID: 2268
+# Current directory: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11036 C:\Users\SET253-01U.HCCMAIN\Documents\GitHub\ENES247\lab5-Latches_FlipFlops\SR_Latch\SR_Latch.xpr
+# Log file: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch/vivado.log
+# Journal file: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch/SR_Latch.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch'
+INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch/SR_Latch.ip_user_files', nor could it be found using path 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch/SR_Latch.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 699.684 ; gain = 109.055
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Mar  7 14:52:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch/SR_Latch.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Thu Mar  7 14:53:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch/SR_Latch.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1550.680 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1550.680 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1550.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1657.945 ; gain = 898.332
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar  7 14:57:21 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/SR_Latch/SR_Latch.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  7 15:01:21 2019...
