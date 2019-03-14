@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1549569018">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552595386">
+  <File Type="OPT-HWDEF" Name="bcdto7segment_dataflow.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="bcdto7segment_dataflow_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="bcdto7segment_dataflow.dcp"/>
   <File Type="BITSTR-BMM" Name="bcdto7segment_dataflow_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="bcdto7segment_dataflow_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="bcdto7segment_dataflow_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="bcdto7segment_dataflow_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="bcdto7segment_dataflow_reports.tcl"/>
   <File Type="OPT-DRC" Name="bcdto7segment_dataflow_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="bcdto7segment_dataflow.hwdef"/>
   <File Type="PWROPT-DCP" Name="bcdto7segment_dataflow_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="bcdto7segment_dataflow_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="bcdto7segment_dataflow_timing_summary_pwropted.rpt"/>
@@ -22,7 +24,6 @@
   <File Type="PLACE-CTRL" Name="bcdto7segment_dataflow_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="bcdto7segment_dataflow_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="bcdto7segment_dataflow_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="bcdto7segment_dataflow.bgn"/>
   <File Type="PLACE-TIMING" Name="bcdto7segment_dataflow_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="bcdto7segment_dataflow_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="bcdto7segment_dataflow.bin"/>
@@ -52,7 +53,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="bcdto7segment_dataflow_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="bcdto7segment_dataflow_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="bcdto7segment_dataflow_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="bcdto7segment_dataflow_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="bcdto7segment_dataflow_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="bcdto7segment_dataflow_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="bcdto7segment_dataflow_postroute_physopt.dcp"/>
@@ -66,6 +66,7 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="bcdto7segment_dataflow_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="bcdto7segment_dataflow.rbt"/>
   <File Type="BITSTR-NKY" Name="bcdto7segment_dataflow.nky"/>
+  <File Type="BG-BGN" Name="bcdto7segment_dataflow.bgn"/>
   <File Type="BG-DRC" Name="bcdto7segment_dataflow.drc"/>
   <File Type="RDI-RDI" Name="bcdto7segment_dataflow.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

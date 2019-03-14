@@ -144,19 +144,37 @@ Two muxes are implemented using the same inputs with the same select line.  So i
 
 *In the RTL schematic, what is RTL_Mux g1_i doing?*
 
+It is selecting the inputs
+
 *Which of the two verilog implemented muxes actually created a tristate symbol in the RTL schematic?*
 
 *After Synthesis, which of the two verilog implemented muxes looks more simple?*
 
+The RTL_Mux g1_i looks more simple after Synthesis
+
 *After Synthesis, why hasn't Vivado detected that the two circuits are identical?*
 
 *After implementation, does the schematic change? If so, put a screen shot here.*
+
+![1552585479515](1552585479515.png)
+
+
 
 *Do the insides of the device reflect the schematic .. after implementation?*
 
 *What are the truth tables of the one or two LUT(s)? Put a screen shot(s) here.*
 
 *Are the truth tables the same or different? Why would Vivado do this? Is this a bug in Vivado?*
+
+The truth tables are the same. There is no bug. They are doing the same thing. (can the from schematic).
+
+![1552586343623](1552586343623.png)
+
+
+
+![1552586224243](1552586224243.png)
+
+
 
 *Do some tests modifying this project. Can you make the one line of code mux into a 4 input, 2 select line, 1 output mux in one line?*
 
@@ -182,27 +200,45 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 #### Testing
 
+S[0] selects y
 
+S[1] selects x
+
+x[0] and y[0] select LED1
+
+x[1] and y[1] select LED2
 
 #### Questions/Tasks
 
-*tb stands for what?* testbench
+*tb stands for what?* 
+
+testbench
 
 *What verilog code is the top level module, the test or the circuit?* 
+
+The test
 
 *The verilog code shares the same port interface as the previous 2bit wide circuit. How is the verilog code different?*
 
 *What name would you give to this verilog abstraction level?*
 
-*In the simulation, what is the cause of the red box with an X in it above?* 
+*In the simulation, what is the cause of the red box with an X in it above?*
+
+Unknown value 
 
 *In the simulation, what do the green boxes with numbers in them mean?*
 
+The inputs 
+
 *In the simulation, was all the activity captured or are their changes to the left of the yellow vertical line?*
+
+No changes to the left. Is started on time zero.
 
 *Is this simulation associated with RTL, Synthesis or Implementation Vivado analysis?*
 
 *Is this a physics simulation or logic simulation?*
+
+Logic simulation
 
 *Can the previous, port-interface identical, circuit be simulated without test verilog code?*
 
@@ -244,9 +280,15 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 *Is the word "end" the end of the "begin" or the end of initial?*
 
+It is the end of "begin"
+
 *Why isn't there a semi-colon after "end"?*
 
+It does not require one
+
 *Are the commands under begin executed sequentially or in parallel?*
+
+Sequentially
 
 *Are all the possible combinations of x, y and s tested?* 
 
@@ -256,13 +298,21 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 *Does white space matter in verilog?*
 
+No
+
 **Read these articles** ... about using initial: [argument](https://forums.xilinx.com/t5/Design-Methodologies-and/quot-initial-quot-statement-with-quot-output-quot-variables/td-p/485782), [pro](http://billauer.co.il/blog/2018/02/verilog-initial-xst-quartus-vivado/), [con](https://www.quora.com/Why-are-initial-blocks-synthesizable-in-FPGA-and-not-in-ASIC), . 
 
 *Which article article supplies the most evidence?*
 
+The second article (pro) shows more evidence. The author tested each case and showed the results and conclusions. 
+
 *Which article is merely opinion?*
 
+The third article (con) . They describe what is going to happen, but no one provides data or tests.
+
 *Which merely says it is possible?*
+
+The first one (argument). They show the codes and what happened, but do not fully describe or explain why.
 
 *What concept is the initial concept linked up to ... that we haven't discussed?* 
 
@@ -282,10 +332,10 @@ Now answer these questions:
 
 **Even Bigger Picture**
 
-*Does the above test actually test with the Vivado implemented FPGA physics or merely test the Verilog logic?* **Verilog Logic.** 
-*Does Vivado try to communicate physics or logic to you through "Open Synthesized Design", "Open Implemented Design"?* **Physics**
-*Is there a way to build a circuit to test a circuit and put them both in an FPGA?* **Yes**
-*Is there a way to collect data about a circuit in FPGA RAM and then dump it to a PC to test?* **Yes .. Is built into Vivado called ILA (integrated logic analyzer)**
+**2** *Does the above test actually test with the Vivado implemented FPGA physics or merely test the Verilog logic?* **Verilog Logic.** 
+**4** *Does Vivado try to communicate physics or logic to you through "Open Synthesized Design", "Open Implemented Design"?* **Physics**
+**3** *Is there a way to build a circuit to test a circuit and put them both in an FPGA?* **Yes**
+**1** *Is there a way to collect data about a circuit in FPGA RAM and then dump it to a PC to test?* **Yes .. Is built into Vivado called ILA (integrated logic analyzer)**
 
 *Please rank the above questions by putting a number in front of the with 1 being what you would like to learn first, and 4 being what you would like to learn last .. given that we are working with small circuits.*
 
@@ -462,7 +512,9 @@ Think about a big project. You start off writing the smaller modules and testing
 
 *What does the Plus sign mean?*
 
-How does the synthesized schematic change? 
+If you click on the plus sign, it opens the gate.
+
+*How does the synthesized schematic change?*
 
 *How many LUTs does the synthesized schematic indicate will be used?*
 
@@ -488,24 +540,43 @@ These ethics questions are related to the community of engineers working for ind
 
 *Do you think the IEEE, the largest, international, engineering standards organization, lays down law that Engineers world wide have to follow?* 
 
+Yes. I believe that the whole world is supposed to follow the IEEE standards.
+
 *Are engineers involved with precise, universally known best practice that hasn't changed for over 100 years or are technicians?* 
 
 *Why are there all these different ways of implementing a mux in verilog when vivado turns them all into the same thing .. a LUT?* 
 
+Because it is easier for us to implement using mux. Then vivado changes it to a LUT to be more accurate. 
+
 *If there is one good, true way of implementing a mux in verilog, why not just teach/learn that?*
+
+Because each case will be different. And that would eliminate the chance of creativity.
 
 *Given the chaos of the verilog standard, does this excite you as an engineer with visions of an opportunity?  Does it give you visions of a job reducing the chaos, unexplored cracks where there are possible significant improvements in productivity, possible unknown territory that the standard hasn't addressed? Or does it depress you?*
 
+It is exciting. There is so much to learn still and to figure out. 
+
 *What does chaos feel like?*
 
+A mess that I can't follow. Frustration. 
+
 *Describe the tremendous advantages a fresh young mind has when confronted with chaos.* 
+
+It tries to see through it and tries to find better ways around. 
 
 *Having learned about a chaos, visualize the advantages one has when confronted with one of these opportunities:  .. getting a doctorate, working for Xilinx or using Xilinx tools in a competitive engineering company.* 
 
 *Given that Fortran hasn't changed since the 1960's, C hasn't changed since the 1970's. Java and C++ haven't changed for [decades](https://www.tiobe.com/tiobe-index/), do these languages excite you as an engineer or depress you?*
 
+It depresses me. It feels like they are already totally figure out and there are experts on them everywhere. If doesn't make me want to try improve them.
+
 Almost all software today has verilog code generators including matlab, python, Lab View. A lot of this code will pass Simulation on [EDAplayground](https://www.edaplayground.com/) or will only work with specific hardware.  *What are the chances that generated code will work in Vivado?* 
 
 *How universal is the digital design process, how universal are the design documents and the symbols they contain that are entered into and looked at in matlab, python and LabView?*
 
-*What is the market share of [Xilinx](https://www.fool.com/investing/2018/04/17/xilinxs-project-everest-looks-like-bad-news-for-in.aspx)?* 
+It is very universal. Can be understood by people from different countries. 
+
+*What is the market share of [Xilinx](https://www.fool.com/investing/2018/04/17/xilinxs-project-everest-looks-like-bad-news-for-in.aspx)?* Everything that evolves technology.
+
+
+

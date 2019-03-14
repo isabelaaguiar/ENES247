@@ -1,3 +1,7 @@
+Isabela Porfirio de Aguiar
+
+
+
 # Lab 2 7segment Display and Adders
 
 Going to build a 7 seg display several different ways, then an adder, then a fast adder with fast carry logic and really use more of a CLB block than a LUT.
@@ -7,6 +11,8 @@ Going to build a 7 seg display several different ways, then an adder, then a fas
 This lab is about turning off and on the individual red LED segments of the display, turning off and on the 8 displays on the Nexys4DDR board, and turning off and on the DP or decimal point. 
 
 #### Port Interface
+
+![1552593153704](1552593153704.png)
 
 #### Verilog Code
 
@@ -18,29 +24,57 @@ This lab is about turning off and on the individual red LED segments of the disp
 
 #### Synthesis Schematic
 
+![1552593480605](1552593480605.png)
+
+
+
 #### Implementation Design Screen shot of something interesting
 
+![1552593785052](1552593785052.png)
+
 #### Testing
+
+SW 0 to 7 turns on LEDs from 0 to 7 and turns off part of the display numbers. 
+
+LEDS are normally off and DISPLAY is normally on. 
 
 #### Prompts
 
 *How is this project different from just hooking all the switches up to all the LEDs?*
 
+It also connects the switches to the Display, which is normally on. 
+
 *This project does something different from an output point of view than just selecting an LED. What output does something different?*
+
+The display outputs. in this project, the display is ON when outputs are 0. Normally On.
 
 *Can the decimal place (DP) be moved to a different display than the display the number is appearing on?*
 
+No
+
 *Can all the displays display the same number once?*
+
+Yes
 
 *Can the displays capture and store different numbers?*
 
+No
+
 *How are the segments, the DP and the anodes behaving differently than the LED's?* 
+
+They are on, when input is 0, while the LED's are on when input is 1.
 
 *How would you modify segment, DP and/or anodes to make them behave like an LED?*
 
+Would take away the NOT gates. (NOT sign on the verilog code)
+
 *Would this be more confusing or less confusing when looking at the verilog code?*
 
+Less confusing
+
 *What words are used by computer and electrical engineers to describe this behavior?*
+
+Normally on
 
 *How many additional lines would have to be added to the XDC file (mostly commented out) to address each of eight displays, and each segment and decimal place on each display individually like the 16 LED's?* 
 
@@ -104,25 +138,45 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 
 #### Synthesis Schematic
 
+![1552595327823](1552595327823.png)
+
 #### Implementation Design Screen shot of something interesting
 
+![1552595496569](1552595496569.png)
+
 #### Testing
+
+With this code, all 8 displays are changing at the same time. It is only coded to display 0 through 9. When try to display 10, 11, ... , get something weird (error).It is also not coded to display letters. 
 
 #### Prompts
 
 *Does the verilog code above use constants?* 
 
+No
+
 *Was the <u>obvious solution</u> obvious to you?* 
+
+It wasn't obvious to me
 
 *Did you see a verilog coding solution that was different than this one before looking at the code?*
 
+No
+
 *Did you understand the verilog code's logic above after reading it?* 
+
+Yes
 
 *Do these solutions blind you .. prevent you from seeing other solutions than the one above?* 
 
+After reading it, my brain automatically things like that. So it is better to try to think of solutions before reading these. 
+
 *BCD is easy compared to displaying in addition to 0,1,2,3,4,5,6,7,8,9 also displaying abcdEF of hex. Suppose you added support for hex in this project. Is this [scope creep](https://en.wikipedia.org/wiki/Scope_creep)?* 
 
+Yes. Can change the scope of it. 
+
 *What is normal? For an engineer to create/see a complicated solution, and revisit the project requirements to see if the project is out of scope? Or design a minimal, elegant solution that perfectly matches the design requirements the first time?* 
+
+One that does not match the requirements the first time. 
 
 *For seg[6] "g" , the first term is  (**~x[3] & ~x[2] & ~x[1]** ).  What BCD symbols (0,1,2,3,4,5,6,7,8,9)  is it creating a 1 for?* 
 
@@ -134,9 +188,15 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 
 *Find an alternative verilog solution to this project and link it up here.* 
 
+![1552596625209](1552596625209.png)
+
 *Is this project more beautiful, easier to understand, less work to figure out what is going on in the first place?* 
 
+It is not easier to understand
+
 *Does the project you linked up use constants?* 
+
+No
 
 ## Lab2_2_hexToBCD
 
@@ -163,6 +223,10 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 ![1549296638682](1549296638682.png)
 
 #### Testing
+
+When selecting 10, it carries a bit to the left. LEDs in HEX. Maximum possible = 15.
+
+
 
 #### Prompts
 
