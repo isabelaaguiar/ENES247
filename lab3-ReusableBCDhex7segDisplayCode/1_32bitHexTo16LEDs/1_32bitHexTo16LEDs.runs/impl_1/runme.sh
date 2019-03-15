@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log thirtyTwobitHexTo16LEDs.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source thirtyTwobitHexTo16LEDs.tcl -notrace
 
 

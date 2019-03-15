@@ -8,8 +8,6 @@ One goal might be to use the primitives within the FPGA CLB. Chapter 3 of the [V
 
 
 
-
-
 #### Verilog Code
 
 ![img](LUTMUXverilog.PNG)
@@ -32,8 +30,6 @@ One goal might be to use the primitives within the FPGA CLB. Chapter 3 of the [V
 
 
 
-
-
 #### Testing
 
  LED[0] and LED[1] are normally on.
@@ -46,9 +42,15 @@ ___
 
 *Does it look like the primitives can be accessed in Verilog?* 
 
+Yes. Through the schematic. 
+
 *Can you see a direct relationship between the primitive used and the primitive referenced in the Verilog code?*
 
+No
+
 *The Mux implementation leaf cell seems to highlight a vertical path within the CLB. Why?*
+
+
 
 *How is the LUT instantiation different from the normal instantiation of calling a pre-existing module ?*
 
@@ -98,19 +100,27 @@ ___
 
 #### Port Diagram
 
-
+![1552678914484](1552678914484.png)
 
 #### Verilog Code
 
+![1552678939341](1552678939341.png)
+
 #### RTL Schematic Screen shot
+
+![1552678967648](1552678967648.png)
 
 #### Synthesis Schematic Screen shot
 
+![1552679004469](1552679004469.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![1552679029389](1552679029389.png)
 
 #### Testing
 
-
+The decoder is turning 3 inputs into 16 outputs, in this case. Exactly two LEDs will be on all times (one y and one z), no more than 2 at once. 
 
 ___
 
@@ -248,7 +258,7 @@ An alternative to if, if, if, if, if, ... if else is a case command. Both Case a
 
 #### Testing
 
-
+Comparing the numbers to output. Changing the text file, changes the output.
 
 ___
 
@@ -283,26 +293,4 @@ Look at the .txt file.
 *What do the bits in the text file represent?*
 
 *A [Mips CPU](https://en.wikipedia.org/wiki/MIPS_architecture#Jump_and_branch) contains a circuit similar to this. When does the circuit execute?*  
-
-## 5ROMmultiply
-
-Your goal is to create a circuit that multiplies two bits together. Use the ROM. Create the text file. Create the code. Make it as RTL as possible. 
-
-#### Port Diagram
-
-#### Verilog Code
-
-#### RTL Schematic Screen shot
-
-#### Synthesis Schematic Screen shot
-
-#### Implementation Device screen shot zoomed in on something interesting
-
-#### Testing
-
- 
-
-___
-
-#### Prompts
 

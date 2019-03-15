@@ -230,23 +230,37 @@ When selecting 10, it carries a bit to the left. LEDs in HEX. Maximum possible =
 
 #### Prompts
 
-*A BEL is a [Basic Element of Logic](https://www.rapidwright.io/docs/Xilinx_Architecture.html).  Start reading the link. What is a routing BEL most similar to?*  
+*A BEL is a [Basic Element of Logic](https://www.rapidwright.io/docs/Xilinx_Architecture.html).  Start reading the link. What is a routing BEL most similar to?*  A mux
 
 ![1549369911764](1549369911764.png)
 
 *What are PIPs?*
 
+Programmable Interconnect Point. They are configurable connections that connect an input pin to an output pin.
+
 *Can you see a PIP in the device Implementation screen shots above?*
+
+No
 
 *What company wrote RapidWright?*
 
+Xilinx 
+
 *What value is RapidWright adding to Vivado?*
+
+It allows the user to be able to see and follow the circuit, even the components not being used.
 
 *Given that there are other products similar to RapidWright from the same company, what does this tell you about the way the company develops software?*
 
+They have a starting point, and they improve certain points of it to different uses.
+
 *The always @\* means execute when anything on the right hand side of the equal signs changes. What is the only thing on the right hand side of the equal sign?*
 
-*Within the module the lines of code all execute in parallel. Within the always begin .. end block, everything executes in sequence like a normal program. There are two more begin end blocks associated with if and else. What would a line of code look like if there was no begin end block after always, after if or after else?*
+inputs
+
+*Within the module the lines of code all execute in parallel. Within the always begin .. end block, everything executes in sequence like a normal program. There are two more begin end blocks associated with if and else.*
+
+*What would a line of code look like if there was no begin end block after always, after if or after else?*
 
 This project was solved by a Xilinx instructor with the following four modules:
 
@@ -264,9 +278,17 @@ This project was solved by a Xilinx instructor with the following four modules:
 
 *The RTL schematic is very interesting. It has a symbol for comparing and a symbol for subtracting. A normal gate is not used. What are the equivalent symbols in logisim? (Attach screen shots)*
 
+![1552674471324](1552674471324.png)
+
 *Are there any standard symbols for comparing and adding circuits on the internet? Spend 1 minute, link up what you can find that is close to what looks like a standard.* 
 
+There are no standard symbols for it. Could not find. 
+
 *Spend 1 minute reading this [link](https://blog.digilentinc.com/fpga-configurable-logic-block/) with the goal of figuring out the difference between a SliceL and LUT. Write a phrase to describe how you are going to remember the difference .. for now ... Doesn't have to be correct. It is a hypothesis that you carry around with you.*
+
+
+
+
 
 ## Lab2_3_hexTo7seg
 
@@ -280,15 +302,27 @@ The goal is to display BCD with an LED representing 1, the switches representing
 
 #### Synthesis Schematic
 
+![1552676099535](1552676099535.png)
+
+
+
 #### Implementation Design Screen shot of something interesting
 
+![1552676281738](1552676281738.png)
+
+
+
 #### Testing
+
+Now displays numbers from 0 to 9. LEDs are still in binary.
 
 #### Prompts
 
 *Why the modules HexToBCD and BCDto7SegDisplay?*
 
 *Why not make it just one big, simple verilog project?*
+
+Harder to follow and understand.
 
 ## Lab2_4_Adders
 
@@ -313,7 +347,11 @@ Vivado is going to translate any math into truth tables.  A 6 input LUT can hold
 
 Build 3 bit adder. Two groups of 3 switches, added together fit in four bits and can be displayed on one 7 segment display with an overflow or carry LED. 
 
-#### Port Interface
+
+
+**Verilog Code**
+
+![1552677206906](1552677206906.png)
 
 #### RTL Schematic
 
@@ -321,13 +359,25 @@ Build 3 bit adder. Two groups of 3 switches, added together fit in four bits and
 
 #### Synthesis Schematic
 
+![1552677000501](1552677000501.png)
+
+
+
 #### Implementation Design Screen shot of something interesting
 
+![1552676934749](1552676934749.png)
+
+
+
 #### Testing
+
+Adds values on the right to values on the left and carries a bit. Maximum value=14 (7+7).
 
 #### Prompts
 
 *Describe the changes to the previous project that turned it into an adder in terms of the verilog code.*
+
+More wires, 3 inputs for each hex instead of 4 now.
 
 *The maximum of adding two four bit numbers is 5 bits. We are already displaying the 5th bit on an LED. Why not implement a 4 bit adder? What is so complicated about implementing a four bit adder with BCD output ?* 
 
@@ -336,6 +386,8 @@ Build 3 bit adder. Two groups of 3 switches, added together fit in four bits and
 *On the internet, you can find half-adders, full-adders, look ahead adders,  3 bit adder designs in both verilog and with gates. Why are there are no adder truth tables?* 
 
 *Create a 3 bit + 3 bit = 4 bit adder truth table and put it here. Suggest doing this with logisim, with a three bit adder, then have logisim analyze the circuit. Logisim will produce the truth table.*  
+
+![1552675982756](1552675982756.png)
 
 *How many LUTs would the logisim circuit consume, just for the purpose of adding?*
 
