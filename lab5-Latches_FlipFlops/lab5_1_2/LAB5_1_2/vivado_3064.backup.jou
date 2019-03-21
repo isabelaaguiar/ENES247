@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 21 15:27:22 2019
+# Process ID: 3064
+# Current directory: C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9724 C:\Users\SET253-11U\Documents\GitHub\ENES247\lab5-Latches_FlipFlops\lab5_1_2\LAB5_1_2\LAB5_1_2.xpr
+# Log file: C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/vivado.log
+# Journal file: C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.xpr
+update_compile_order -fileset sources_1
+update_files -from_files C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow.v -to_files C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow_tb.v -filesets [get_filesets *]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw

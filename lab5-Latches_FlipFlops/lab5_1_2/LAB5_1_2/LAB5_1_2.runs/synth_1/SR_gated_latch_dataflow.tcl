@@ -22,16 +22,13 @@ create_project -in_memory -part xc7k70tfbv676-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.cache/wt [current_project]
-set_property parent.project_path C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.cache/wt [current_project]
+set_property parent.project_path C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.cache/ip [current_project]
+set_property ip_output_repo c:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib {
-  C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow.v
-  C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow_tb.v
-}
+read_verilog -library xil_defaultlib C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow.v
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -40,18 +37,18 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/Nexys4DDR_Master.xdc]
+read_xdc C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/Nexys4DDR_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/Nexys4DDR_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top SR_gated_latch_dataflow_tb -part xc7k70tfbv676-1
+synth_design -top SR_gated_latch_dataflow -part xc7k70tfbv676-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef SR_gated_latch_dataflow_tb.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file SR_gated_latch_dataflow_tb_utilization_synth.rpt -pb SR_gated_latch_dataflow_tb_utilization_synth.pb"
+write_checkpoint -force -noxdef SR_gated_latch_dataflow.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file SR_gated_latch_dataflow_utilization_synth.rpt -pb SR_gated_latch_dataflow_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

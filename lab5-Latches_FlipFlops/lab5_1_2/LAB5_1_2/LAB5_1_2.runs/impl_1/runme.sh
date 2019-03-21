@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.runs/impl_1'
+HD_PWD='C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
-EAStep vivado -log SR_gated_latch_dataflow_tb.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source SR_gated_latch_dataflow_tb.tcl -notrace
+/bin/touch .write_bitstream.begin.rst
+EAStep vivado -log SR_gated_latch_dataflow.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source SR_gated_latch_dataflow.tcl -notrace
 
 

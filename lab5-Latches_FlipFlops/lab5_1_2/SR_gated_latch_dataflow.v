@@ -11,6 +11,7 @@ module SR_gated_latch_dataflow(
     output Qbar
     );
     
+    
     assign #2 R_i = R & Enable;
     assign #2 S_i = S & Enable;
     assign #2 Q_i = Q;

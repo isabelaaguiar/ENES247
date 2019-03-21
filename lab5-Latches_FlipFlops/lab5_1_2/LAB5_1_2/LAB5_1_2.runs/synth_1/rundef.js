@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log SR_gated_latch_dataflow_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SR_gated_latch_dataflow_tb.tcl" );
+         "-log SR_gated_latch_dataflow.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SR_gated_latch_dataflow.tcl" );
 
 
 

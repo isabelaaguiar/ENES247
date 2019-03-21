@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Mar 14 14:08:02 2019
-# Process ID: 3068
-# Current directory: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.runs/synth_1
-# Command line: vivado.exe -log SR_gated_latch_dataflow_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SR_gated_latch_dataflow_tb.tcl
-# Log file: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.runs/synth_1/SR_gated_latch_dataflow_tb.vds
-# Journal file: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.runs/synth_1\vivado.jou
+# Start of session at: Thu Mar 21 15:59:50 2019
+# Process ID: 9140
+# Current directory: C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.runs/synth_1
+# Command line: vivado.exe -log SR_gated_latch_dataflow.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SR_gated_latch_dataflow.tcl
+# Log file: C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.runs/synth_1/SR_gated_latch_dataflow.vds
+# Journal file: C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source SR_gated_latch_dataflow_tb.tcl -notrace
+source SR_gated_latch_dataflow.tcl -notrace

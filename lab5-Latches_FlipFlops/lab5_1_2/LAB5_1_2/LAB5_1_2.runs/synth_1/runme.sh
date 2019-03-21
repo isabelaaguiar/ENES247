@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.runs/synth_1'
+HD_PWD='C:/Users/SET253-11U/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_1_2/LAB5_1_2/LAB5_1_2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log SR_gated_latch_dataflow_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SR_gated_latch_dataflow_tb.tcl
+EAStep vivado -log SR_gated_latch_dataflow.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SR_gated_latch_dataflow.tcl
