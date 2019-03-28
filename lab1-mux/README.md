@@ -146,17 +146,19 @@ Two muxes are implemented using the same inputs with the same select line.  So i
 
 *In the RTL schematic, what is RTL_Mux g1_i doing?*
 
-It is selecting the inputs
+**It is selecting the inputs**
 
 *Which of the two verilog implemented muxes actually created a tristate symbol in the RTL schematic?*
 
 *After Synthesis, which of the two verilog implemented muxes looks more simple?*
 
-The RTL_Mux g1_i looks more simple after Synthesis
+**The RTL_Mux g1_i looks more simple after Synthesis**
 
 *After Synthesis, why hasn't Vivado detected that the two circuits are identical?*
 
 *After implementation, does the schematic change? If so, put a screen shot here.*
+
+**Yes**
 
 ![1552585479515](1552585479515.png)
 
@@ -168,7 +170,7 @@ The RTL_Mux g1_i looks more simple after Synthesis
 
 *Are the truth tables the same or different? Why would Vivado do this? Is this a bug in Vivado?*
 
-The truth tables are the same. There is no bug. They are doing the same thing. (can the from schematic).
+**The truth tables are the same. There is no bug. They are doing the same thing. (can the from schematic).**
 
 ![1552586343623](1552586343623.png)
 
@@ -178,7 +180,7 @@ The truth tables are the same. There is no bug. They are doing the same thing. (
 
 
 
-*Do some tests modifying this project. Can you make the one line of code mux into a 4 input, 2 select line, 1 output mux in one line?*
+
 
 ## lab1_2_tb_mux2-1-2bitwide
 
@@ -214,33 +216,33 @@ x[1] and y[1] select LED2
 
 *tb stands for what?* 
 
-testbench
+**testbench**
 
 *What verilog code is the top level module, the test or the circuit?* 
 
-The test
+**The test**
 
-*The verilog code shares the same port interface as the previous 2bit wide circuit. How is the verilog code different?*
+*The verilog code shares the same port interface as the previous 2bit wide circuit. How is the verilog code different?**
 
-*What name would you give to this verilog abstraction level?*
+**In the simulation, what is the cause of the red box with an X in it above?*
 
-*In the simulation, what is the cause of the red box with an X in it above?*
-
-Unknown value 
+**Unknown value **
 
 *In the simulation, what do the green boxes with numbers in them mean?*
 
-The inputs 
+**The inputs **
 
 *In the simulation, was all the activity captured or are their changes to the left of the yellow vertical line?*
 
-No changes to the left. Is started on time zero.
+**No changes to the left. Is started on time zero.**
 
 *Is this simulation associated with RTL, Synthesis or Implementation Vivado analysis?*
 
+**RTL**
+
 *Is this a physics simulation or logic simulation?*
 
-Logic simulation
+**Logic simulation**
 
 *Can the previous, port-interface identical, circuit be simulated without test verilog code?*
 
@@ -496,9 +498,15 @@ One of the ways we know what is going on is to predict Vivado's behavior. This c
 
 *Which of the two modules above is the top level module?*
 
+**mux_3_to_1_instantiation**
+
 *What is the symbol for top level module in the vivado design sources hierarchy?*
 
+**the plus sign**
+
 *Which of the two modules above has nets (wires) mentioned in the XDC file?*
+
+mux_3_to_1_instantiation
 
 What are the lower level module instantiation names? 
 
