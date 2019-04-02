@@ -1,5 +1,7 @@
 Isabela Porfirio de Aguiar
 
+LAB 2
+
 
 
 # Lab 2 7segment Display and Adders
@@ -377,7 +379,7 @@ Adds values on the right to values on the left and carries a bit. Maximum value=
 
 *Describe the changes to the previous project that turned it into an adder in terms of the verilog code.*
 
-More wires, 3 inputs for each hex instead of 4 now.
+Now there are two lines of inputs  instead of one, and they are added together. After added, act like the one input line from last project.
 
 *The maximum of adding two four bit numbers is 5 bits. We are already displaying the 5th bit on an LED. Why not implement a 4 bit adder? What is so complicated about implementing a four bit adder with BCD output ?* 
 
@@ -396,6 +398,8 @@ More wires, 3 inputs for each hex instead of 4 now.
 *Can you think of a more efficient way to use the LUTs than what Vivado did?*
 
 *How many rows would a 28 input truth table have?*
+
+2^28= 268435456 rows
 
 *How many LUTs are used in this project and how many are available in our FPGA (Look at Synthesis Utilization Report)?*
 

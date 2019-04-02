@@ -50,8 +50,6 @@ No
 
 *The Mux implementation leaf cell seems to highlight a vertical path within the CLB. Why?*
 
-
-
 *How is the LUT instantiation different from the normal instantiation of calling a pre-existing module ?*
 
 *What Line of the Code puts a truth table in the LUT?*
