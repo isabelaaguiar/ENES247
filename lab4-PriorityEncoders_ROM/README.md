@@ -298,3 +298,27 @@ Look at the .txt file.
 
 *A [Mips CPU](https://en.wikipedia.org/wiki/MIPS_architecture#Jump_and_branch) contains a circuit similar to this. When does the circuit execute?*  
 
+
+
+## 5ROMmultiply
+
+Your goal is to create a circuit that multiplies two bits together. Use the ROM. Create the text file. Create the code. Make it as RTL as possible. 
+
+#### Port Diagram
+
+#### Verilog Code
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+ 
+
+------
+
+#### Prompts
+
