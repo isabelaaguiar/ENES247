@@ -50,11 +50,17 @@ No
 
 *The Mux implementation leaf cell seems to highlight a vertical path within the CLB. Why?*
 
+That's the one being used
+
 *How is the LUT instantiation different from the normal instantiation of calling a pre-existing module ?*
 
 *What Line of the Code puts a truth table in the LUT?*
 
+line 16 - lut_data_out
+
 *How many rows are there to the truth table?*
+
+64 lines
 
 *How is the LUT instantiation different from the normal instantiation of calling a pre-existing module?*
 
@@ -62,13 +68,13 @@ No
 
 *What does instantiation mean?*
 
+Method of adding components to your design. Instantiation gives you full control over how the component is used, you know exactly how the logic will be used. When you instantiate a component, you add an instance of that component to your HDL file or schematic.
+
 *What does inference mean?*
+
+It is another method of adding components to your design.  Inference offers readable and portable code that can be used to target different architectures. When you infer a component, you provide a description of the function you want to accomplish. The synthesis tool then interprets the HDL code to determine which hardware components to use to perform the function.
 
 *Have we inferred buffers (BUFG) in projects before?*
-
-*What does instantiation mean?*
-
-*What does inference mean?*
 
 *Verilog has tristate [buffer primitives](http://verilog.renerta.com/mobile/source/vrg00003.htm)  named bufif0 and bufif1. These names don't appear in the Vivado 7 series libraries. Why? What are the risks of using the buffers Xilinx has named in this document?*
 
