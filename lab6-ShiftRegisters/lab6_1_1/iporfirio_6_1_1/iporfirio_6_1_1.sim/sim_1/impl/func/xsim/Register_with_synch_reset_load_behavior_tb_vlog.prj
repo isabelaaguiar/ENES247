@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Register_with_synch_reset_load_behavior_tb_func_impl.v" \
+"../../../../../../Register_with_synch_reset_load_behavior_tb.v" \
+
+# Do not sort compile order
+nosort
