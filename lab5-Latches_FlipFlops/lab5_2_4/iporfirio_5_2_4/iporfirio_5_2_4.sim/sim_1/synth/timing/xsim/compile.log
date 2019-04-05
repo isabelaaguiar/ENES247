@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_2_4/iporfirio_5_2_4/iporfirio_5_2_4.sim/sim_1/synth/timing/xsim/D_ff_with_ce_and_synch_reset_behavior_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_ff_with_ce_and_synch_reset_behavior
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_2_4/D_ff_with_ce_and_synch_reset_behavior_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_ff_with_ce_and_synch_reset_behavior_tb

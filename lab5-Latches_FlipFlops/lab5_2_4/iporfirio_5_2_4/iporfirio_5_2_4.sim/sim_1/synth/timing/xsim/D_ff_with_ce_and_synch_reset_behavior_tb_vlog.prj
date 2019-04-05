@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"D_ff_with_ce_and_synch_reset_behavior_tb_time_synth.v" \
+"../../../../../../D_ff_with_ce_and_synch_reset_behavior_tb.v" \
+
+# Do not sort compile order
+nosort

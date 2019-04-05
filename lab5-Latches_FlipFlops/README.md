@@ -209,3 +209,99 @@ Qc=0 when: D=0 and Clock switches from 1 to 0 (Negative pulse)
 
 
 
+## Lab 5_2_3 - D FlipFlop sync reset behavior
+
+
+
+### Verilog Code
+
+![1554486298689](1554486298689.png)
+
+
+
+### RTL-schematic
+
+![1554486477230](1554486477230.png)
+
+### Synthesis
+
+![1554486539231](1554486539231.png)
+
+
+
+
+
+### Implementation
+
+![1554486184936](1554486184936.png)
+
+
+
+### Testing
+
+Reset is triggered by the clock. If reset is 1, but there is no clock pulse, nothing happens. 
+
+Reset also trigs D. Input D is displayed as the output only when there is a positive pulse of the clock (when clock switches from 0 to 1).
+
+
+
+
+
+## Lab 5_2_4 - D FlipFlop with CE and sync reset behavior
+
+
+
+### Verilog Code
+
+![1554488788101](1554488788101.png)
+
+### RTL-schematic
+
+![1554488686910](1554488686910.png)
+
+### Synthesis
+
+![1554488740510](1554488740510.png)
+
+### Implementation
+
+![1554488594228](1554488594228.png)
+
+
+
+
+
+
+
+
+
+### Testing
+
+Looks like output 1 is only displayed if both D and ce are 1 (and reset is 0). Reset is independent of CE, it works no matter what, when clk pulses from 0 to 1, no matter what CE and D are, it resets output to 0. 
+
+
+
+
+
+## Lab 5_2_5 - T FlipFlop enable behavior
+
+
+
+### Verilog Code
+
+
+
+
+
+
+
+
+
+
+
+
+
+![1554490579551](1554490579551.png)
+
+
+
