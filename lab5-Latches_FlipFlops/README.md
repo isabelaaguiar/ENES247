@@ -263,6 +263,12 @@ Reset also trigs D. Input D is displayed as the output only when there is a posi
 
 ![1554488740510](1554488740510.png)
 
+Vivado creates this FDRE module. Looked it up on Xilinx  Libraries Guide for Schematic Designs. Flip Flop Table:
+
+Design Element: FDRE. Description: Primitive: D Flip-Flop with Clock Enable and Synchronous Reset. 
+
+
+
 ### Implementation
 
 ![1554488594228](1554488594228.png)
@@ -289,19 +295,41 @@ Looks like output 1 is only displayed if both D and ce are 1 (and reset is 0). R
 
 ### Verilog Code
 
+![1554490700352](1554490700352.png)
 
 
 
 
 
+### RTL-schematic
+
+![1554491170073](1554491170073.png)
+
+### Synthesis
+
+![1554491209977](1554491209977.png)
 
 
 
-
-
-
+###  Implementation
 
 ![1554490579551](1554490579551.png)
+
+
+
+
+
+### Testing
+
+The T ("toggle") FlipFlop changes its output on each negative clock edge. Because the Verilog code uses "!reset", it resets when reset is 0 instead of 1. 
+
+
+
+
+
+
+
+
 
 
 

@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Apr  5 14:54:06 2019
-# Process ID: 11584
+# Start of session at: Fri Apr  5 14:59:34 2019
+# Process ID: 12688
 # Current directory: C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_2_5/iporfirio_5_2_5/iporfirio_5_2_5.runs/impl_1
 # Command line: vivado.exe -log T_ff_enable_behavior.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source T_ff_enable_behavior.tcl -notrace
 # Log file: C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247/lab5-Latches_FlipFlops/lab5_2_5/iporfirio_5_2_5/iporfirio_5_2_5.runs/impl_1/T_ff_enable_behavior.vdi
