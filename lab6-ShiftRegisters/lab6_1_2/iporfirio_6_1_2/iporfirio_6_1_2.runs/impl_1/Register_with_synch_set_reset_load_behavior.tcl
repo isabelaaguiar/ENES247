@@ -66,7 +66,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint Register_with_synch_set_reset_load_behavior_routed.dcp
-  set_property webtalk.parent_dir C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247/lab6-ShiftRegisters/lab6_1_2/iporfirio_6_1_2/iporfirio_6_1_2.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab6-ShiftRegisters/lab6_1_2/iporfirio_6_1_2/iporfirio_6_1_2.cache/wt [current_project]
   catch { write_mem_info -force Register_with_synch_set_reset_load_behavior.mmi }
   write_bitstream -force Register_with_synch_set_reset_load_behavior.bit 
   catch {write_debug_probes -quiet -force Register_with_synch_set_reset_load_behavior}

@@ -32,7 +32,7 @@ Reset=1 resets all outputs to 0, but only trigged by positive edge of clock. Res
 
 #### Testing
 
-Load enables the clock. D's only work if load=1. If load=0, clock doesn't do anything with D's. Set and reset DO NOT depend on load. Set=1 sets all outputs=1, no matter what load and D's are. Reset=1, resets all outputs=0, no matter what load and D's are. Set and Reset only work with clock positive edge (when clock switches from 0 to 1). 
+Load enables the clock. D's only work if load=1. If load=0, clock doesn't do anything with D's. Set and reset DO NOT depend on load. Set=1 sets all outputs=1, no matter what load and D's are, as long as Clock is 1. Reset=1, resets all outputs=0, no matter what load and D's are, as long as clock is 1. Set and Reset only work with clock positive edge (when clock switches from 0 to 1). 
 
 I tried Set=1 AND reset=1 and it reset all outputs = 0. So reset is "stronger" than set.
 
@@ -50,6 +50,16 @@ I tried Set=1 AND reset=1 and it reset all outputs = 0. So reset is "stronger" t
 
 Why is this named RTL_REG rather than RTL_REG_SYNC like the ones above?
 
+
+
+#### Testing
+
+The coding is actually a Three Bit delay. It takes 3 clock pulses for input to be output. 
+
+When changing the input, it takes 3 pulses for that change to make it to the output.
+
+
+
 ## 1-4 ShiftLeft
 
 ![1554411691790](assets/1554411691790.png)
@@ -62,3 +72,6 @@ Again, we see RTL_REG.  *What is the difference between RTL_REG and RTL_REG_SYNC
 
 
 
+#### Testing
+
+The load blocks ShiftIn and ShiftEn. Load anables the clock to display ParallelIn[3:0]. If load is 0, allows ShiftIn and ShiftEn, which shift output to the left.

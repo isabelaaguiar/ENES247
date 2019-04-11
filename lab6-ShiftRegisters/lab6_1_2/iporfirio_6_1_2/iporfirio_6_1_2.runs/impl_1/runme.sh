@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247/lab6-ShiftRegisters/lab6_1_2/iporfirio_6_1_2/iporfirio_6_1_2.runs/impl_1'
+HD_PWD='C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab6-ShiftRegisters/lab6_1_2/iporfirio_6_1_2/iporfirio_6_1_2.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
