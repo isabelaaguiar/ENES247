@@ -172,3 +172,39 @@ If enable = 0, it blocks the clock and nothing is added.
 
 If clear_n=0 when the clock pulses positive, it clears all outputs, no matter what enable is.  
 
+
+
+
+
+
+
+### 2-3 Four bit down counter with load enable behavior
+
+
+
+![1556823752330](1556823752330.png)
+
+
+
+
+
+### RTL Schematic
+
+![1556823792854](1556823792854.png)
+
+### Implementation
+
+![1556824265254](1556824265254.png)
+
+
+
+#### Testing
+
+Counts down from 10 to 0. Subtracts 1 at each positive edge of the clock, as long as Enable is 1. If Enable is 0, nothing gets subtracted. 
+
+Load sets counter back to 10 (1010), when clock pulses, as long as Enable is 1. Enable blocks Load if it is 0. 
+
+Clear sets all counting equal to 0 (all outputs are 0), on the positive pulse of clock. Enable DOES NOT block Clear. 
+
+If Load and Clear are set at the same time, Clear wins. 
+
