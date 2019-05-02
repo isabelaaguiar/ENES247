@@ -75,3 +75,100 @@ Again, we see RTL_REG.  *What is the difference between RTL_REG and RTL_REG_SYNC
 #### Testing
 
 The load blocks ShiftIn and ShiftEn. Load anables the clock to display ParallelIn[3:0]. If load is 0, allows ShiftIn and ShiftEn, which shift output to the left.
+
+
+
+## 1-5 Serial in parallel out enable behavior
+
+
+
+![1556815945300](1556815945300.png)
+
+
+
+![1556816918797](1556816918797.png)
+
+
+
+#### Testing
+
+ShiftEn blocks the Clock if=0. If ShiftEn=1, t enables the Clk to shift the input from ShiftIn left, 1 time for each clk tick, until it reaches ShiftOut output. ShiftOut displays the output from ParallelOut[3]. When shifted left from ShiftOut, that output is gone. 
+
+Clk does not do anything if ShiftEn is 0.
+
+
+
+### 2-1 Eight bit counter with T flop behavior
+
+
+
+![1556818286761](1556818286761.png)
+
+
+
+![1556818341032](1556818341032.png)
+
+
+
+### RTL Schematic
+
+![1556818440752](1556818440752.png)
+
+
+
+### Implementation
+
+![1556818576001](1556818576001.png)
+
+#### Testing
+
+This is a counting code. It counts from 0 to 255. It adds one bit at each negative pulse clock, if enable =1. 
+
+If enable = 0, it blocks the clock and nothing is added. 
+
+For this to happen, Clear_n needs to be =1. If clear_n=0 when the clock pulses negative, it clears all outputs, no matter what enable is.  
+
+
+
+
+
+### 2-2 Eight bit counter with D flop behavior
+
+
+
+![1556822121877](1556822121877.png)
+
+
+
+![1556822148180](1556822148180.png)
+
+
+
+![1556822322199](1556822322199.png)
+
+
+
+
+
+### RTL Schematic
+
+![1556822090573](1556822090573.png)
+
+
+
+### Implementation
+
+![1556822007548](1556822007548.png)
+
+
+
+#### Testing
+
+The behavior is the same as 6_2_1, except the trigger now is the positive edge of the clock.
+
+It still counts from 0 to 255, adding one bit for each positive pulse of clock, when enable and clear_n are both =1.
+
+If enable = 0, it blocks the clock and nothing is added. 
+
+If clear_n=0 when the clock pulses positive, it clears all outputs, no matter what enable is.  
+

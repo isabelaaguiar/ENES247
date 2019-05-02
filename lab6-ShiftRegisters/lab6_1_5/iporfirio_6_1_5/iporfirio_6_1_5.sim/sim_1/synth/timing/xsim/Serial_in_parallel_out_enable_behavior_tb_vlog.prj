@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Serial_in_parallel_out_enable_behavior_tb_time_synth.v" \
+"../../../../../../Serial_in_parallel_out_enable_behavior_tb.v" \
+
+# Do not sort compile order
+nosort
