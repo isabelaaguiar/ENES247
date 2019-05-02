@@ -30,7 +30,7 @@ The test bench does not describe a circuit. The Delay determined the unit of tim
 
 
 
-![1556828419761](1556828419761.png)
+![1556832333776](1556832333776.png)
 
 
 
@@ -42,21 +42,44 @@ The test bench does not describe a circuit. The Delay determined the unit of tim
 
 ## LAB 7-1-3 
 
-![1556830933679](1556830933679.png)
+#### ![1556830933679](1556830933679.png)
+
+#### Testbench code
 
 
 
-### RTL Schematic
+![1556832750434](1556832750434.png)
+
+Testbench interacts with verilog code
+
+#### RTL Schematic
 
 ![1556830508023](1556830508023.png)
 
-### Implementation
+#### Synthesis
+
+![1556831200122](1556831200122.png)
+
+
+
+#### Implementation
 
 ![1556830897985](1556830897985.png)
 
 
 
+#### Testbench
+
+![1556831903847](1556831903847.png)
+
 #### Testing
 
+When sel[0]=0 AND sel[1]=0, Then Q = channel[0]
 
+When sel[0]=0 AND sel[1]=1, Then Q = channel[1]
 
+When sel[0]=1 AND sel[1]=0, Then Q = channel[2]
+
+When sel[0]=1 AND sel[1]=1, Then Q = channel[3]
+
+#### 
