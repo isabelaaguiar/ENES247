@@ -16,11 +16,21 @@ Isabela Porfirio de Aguiar
 
 #### RTL Schematic
 
-![1556998902784](1556998902784.png)
+![1557001115216](1557001115216.png)
+
+
+
+![1557001170349](1557001170349.png)
 
 #### Implementation
 
 ![1556997357442](1556997357442.png)
 
 #### Testing
+
+Need to choose 5Hz frequency because of the code having reg[22:0]
+
+2^22 is a little more than 4Hz. So 5 is just enough.
+
+2^23 woulg be more than 8Hz. Too much.
 

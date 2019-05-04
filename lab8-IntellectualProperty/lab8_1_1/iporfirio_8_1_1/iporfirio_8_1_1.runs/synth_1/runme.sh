@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log clk_divider_behavior.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_divider_behavior.tcl
+EAStep vivado -log one_second_clock_behavior.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source one_second_clock_behavior.tcl
