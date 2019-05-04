@@ -67,9 +67,9 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache C:/Users/SET253~1.HCC/AppData/Local/Temp/.Xil_SET253-10U/Vivado-4908-SET253-10C/incrSyn
+  set_param xicom.use_bs_reader 1
   open_checkpoint clk_divider_behavior_routed.dcp
-  set_property webtalk.parent_dir C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_1_1/iporfirio_8_1_1/iporfirio_8_1_1.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_1_1/iporfirio_8_1_1/iporfirio_8_1_1.cache/wt [current_project]
   catch { write_mem_info -force clk_divider_behavior.mmi }
   write_bitstream -force clk_divider_behavior.bit 
   catch {write_debug_probes -quiet -force clk_divider_behavior}

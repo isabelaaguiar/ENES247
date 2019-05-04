@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556912528">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556999463">
   <File Type="BITSTR-BMM" Name="clk_divider_behavior_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="clk_divider_behavior_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="clk_divider_behavior_timing_summary_init.rpt"/>
@@ -78,10 +78,17 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../one_second_clock_behavior.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="clk_divider_behavior"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
