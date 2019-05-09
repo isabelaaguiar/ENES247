@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu May  9 15:24:44 2019
-# Process ID: 3440
+# Start of session at: Thu May  9 15:52:06 2019
+# Process ID: 12804
 # Current directory: C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1
 # Command line: vivado.exe -log two_digits_counter_on_2_7segment_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source two_digits_counter_on_2_7segment_display.tcl
 # Log file: C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/two_digits_counter_on_2_7segment_display.vds
@@ -15,19 +15,19 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3236 
+INFO: Helper process launched with PID 2512 
 WARNING: [Synth 8-2611] redeclaration of ansi port an is not allowed [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/two_digits_counter_on_2_7segment_display_Nexys4ddr.v:19]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 419.066 ; gain = 112.660
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 418.438 ; gain = 112.207
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'two_digits_counter_on_2_7segment_display' [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/two_digits_counter_on_2_7segment_display_Nexys4ddr.v:6]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/.Xil/Vivado-3440-SET253-13C/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/.Xil/Vivado-3440-SET253-13C/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/.Xil/Vivado-12804-SET253-13C/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/.Xil/Vivado-12804-SET253-13C/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'clk_divider_1hz_behavior' [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/clk_divider_1hz_behavior.v:8]
 	Parameter TERMINAL_COUNT bound to: 23'b01001100010010110100000 
 INFO: [Synth 8-6155] done synthesizing module 'clk_divider_1hz_behavior' (2#1) [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/clk_divider_1hz_behavior.v:8]
-INFO: [Synth 8-6157] synthesizing module 'c_counter_binary_0' [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/.Xil/Vivado-3440-SET253-13C/realtime/c_counter_binary_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'c_counter_binary_0' (3#1) [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/.Xil/Vivado-3440-SET253-13C/realtime/c_counter_binary_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c_counter_binary_0' [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/.Xil/Vivado-12804-SET253-13C/realtime/c_counter_binary_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c_counter_binary_0' (3#1) [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/.Xil/Vivado-12804-SET253-13C/realtime/c_counter_binary_0_stub.v:6]
 WARNING: [Synth 8-689] width (4) of port connection 'Q' does not match port width (16) of module 'c_counter_binary_0' [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/two_digits_counter_on_2_7segment_display_Nexys4ddr.v:24]
 WARNING: [Synth 8-689] width (4) of port connection 'Q' does not match port width (16) of module 'c_counter_binary_0' [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/two_digits_counter_on_2_7segment_display_Nexys4ddr.v:25]
 WARNING: [Synth 8-350] instance 'U4' of module 'c_counter_binary_0' requires 5 connections, but only 4 given [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/two_digits_counter_on_2_7segment_display_Nexys4ddr.v:25]
@@ -45,7 +45,7 @@ WARNING: [Synth 8-3917] design two_digits_counter_on_2_7segment_display has port
 WARNING: [Synth 8-3917] design two_digits_counter_on_2_7segment_display has port an[5] driven by constant 1
 WARNING: [Synth 8-3917] design two_digits_counter_on_2_7segment_display has port an[4] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 453.059 ; gain = 146.652
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 452.418 ; gain = 146.188
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -58,10 +58,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 453.059 ; gain = 146.652
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 452.418 ; gain = 146.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 453.059 ; gain = 146.652
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 452.418 ; gain = 146.188
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -78,24 +78,24 @@ Parsing XDC File [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-Inte
 Finished Parsing XDC File [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/Nexys4DDR_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/two_digits_counter_on_2_7segment_display_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/two_digits_counter_on_2_7segment_display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 807.859 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.859 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.754 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 807.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.859 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 807.859 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 807.754 ; gain = 501.348
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 807.859 ; gain = 501.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 807.754 ; gain = 501.348
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 807.859 ; gain = 501.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -106,10 +106,10 @@ Applied set_property DONT_TOUCH = true for instance_name. (constraint file  auto
 Applied set_property DONT_TOUCH = true for U3. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for U4. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 807.754 ; gain = 501.348
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 807.859 ; gain = 501.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 807.754 ; gain = 501.348
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 807.859 ; gain = 501.629
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -186,7 +186,7 @@ WARNING: [Synth 8-3917] design two_digits_counter_on_2_7segment_display has port
 INFO: [Synth 8-3886] merging instance 'U7/an_reg[2]' (FDPE) to 'U7/an_reg[3]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U7/an_reg[3] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 807.754 ; gain = 501.348
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 807.859 ; gain = 501.629
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -200,13 +200,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_out1' to pin 'instance_name/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 807.754 ; gain = 501.348
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 807.859 ; gain = 501.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 810.469 ; gain = 504.063
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 809.488 ; gain = 503.258
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -218,7 +218,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 810.973 ; gain = 504.566
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 809.992 ; gain = 503.762
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,7 +242,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 810.973 ; gain = 504.566
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 809.992 ; gain = 503.762
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -255,7 +255,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 810.973 ; gain = 504.566
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 809.992 ; gain = 503.762
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -267,25 +267,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 810.973 ; gain = 504.566
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 809.992 ; gain = 503.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 810.973 ; gain = 504.566
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 809.992 ; gain = 503.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 810.973 ; gain = 504.566
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 809.992 ; gain = 503.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 810.973 ; gain = 504.566
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 809.992 ; gain = 503.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -329,27 +329,27 @@ Report Instance Areas:
 |3     |  U7     |clk_divider_about_500hz_refresh_rate_2display |    54|
 +------+---------+----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 810.973 ; gain = 504.566
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 809.992 ; gain = 503.762
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 810.973 ; gain = 149.871
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 810.973 ; gain = 504.566
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 809.992 ; gain = 148.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 809.992 ; gain = 503.762
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 823.547 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.270 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 31 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 823.547 ; gain = 528.605
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 823.547 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 820.270 ; gain = 525.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.270 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/two_digits_counter_on_2_7segment_display.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file two_digits_counter_on_2_7segment_display_utilization_synth.rpt -pb two_digits_counter_on_2_7segment_display_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu May  9 15:25:13 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 15:52:35 2019...

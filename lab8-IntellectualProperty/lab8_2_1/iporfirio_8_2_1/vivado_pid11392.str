@@ -1,0 +1,235 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 11392
+License: Customer
+
+Current time: 	Thu May 09 15:51:33 EDT 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 17 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	SET253-13U
+User home directory: C:/Users/SET253-13U.HCCMAIN
+User working directory: C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/SET253-13U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/SET253-13U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/SET253-13U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/vivado.log
+Vivado journal file location: 	C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/vivado.jou
+Engine tmp dir: 	C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/.Xil/Vivado-11392-SET253-13C
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 610 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\SET253-13U.HCCMAIN\Documents\GitHub\ENES247\lab8-IntellectualProperty\lab8_2_1\iporfirio_8_2_1\iporfirio_8_2_1.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 91 MB (+92423kb) [00:00:09]
+// [Engine Memory]: 657 MB (+536963kb) [00:00:09]
+// [GUI Memory]: 101 MB (+5947kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  3333 ms.
+// Tcl Message: open_project C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 720 MB. GUI used memory: 53 MB. Current time: 5/9/19, 3:51:37 PM EDT
+// [Engine Memory]: 720 MB (+32455kb) [00:00:12]
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 738.285 ; gain = 148.539 
+// Project name: iporfirio_8_2_1; location: C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1; part: xc7a100tcsg324-1
+// [Engine Memory]: 758 MB (+1290kb) [00:00:13]
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 800 MB (+4358kb) [00:00:15]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cp): Run Synthesis: addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Thu May  9 15:52:03 2019] Launched synth_1... Run output will be captured here: C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 37 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Thu May  9 15:52:43 2019] Launched impl_1... Run output will be captured here: C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 72 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 971 MB. GUI used memory: 52 MB. Current time: 5/9/19, 3:54:00 PM EDT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,553 MB. GUI used memory: 52 MB. Current time: 5/9/19, 3:54:13 PM EDT
+// [Engine Memory]: 1,564 MB (+759732kb) [00:02:47]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,671 MB (+29640kb) [00:02:49]
+// Device: addNotify
+// [GUI Memory]: 106 MB (+534kb) [00:02:49]
+// DeviceView Instantiated
+// [GUI Memory]: 130 MB (+19566kb) [00:02:50]
+// WARNING: HEventQueue.dispatchEvent() is taking  2044 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1609.246 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1609.246 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1609.246 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1729.406 ; gain = 862.254 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 137 MB (+80kb) [00:02:52]
+// WARNING: HEventQueue.dispatchEvent() is taking  1131 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 22 seconds
+// [GUI Memory]: 144 MB (+532kb) [00:02:54]
+// Elapsed time: 23 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu May  9 15:54:25 2019] Launched impl_1... Run output will be captured here: C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 58 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 438947, 2663369); // D (I, cp)
+// Device view-level: 1.7
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 562204, 2778636); // D (I, cp)
+// Device view-level: 2.7
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, two_digits_counter_on_2_7segment_display (two_digits_counter_on_2_7segment_display_Nexys4ddr.v)]", 1); // B (D, cp)
+// [GUI Memory]: 156 MB (+4537kb) [00:04:16]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, two_digits_counter_on_2_7segment_display (two_digits_counter_on_2_7segment_display_Nexys4ddr.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, two_digits_counter_on_2_7segment_display (two_digits_counter_on_2_7segment_display_Nexys4ddr.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, two_digits_counter_on_2_7segment_display (two_digits_counter_on_2_7segment_display_Nexys4ddr.v)]", 1); // B (D, cp)
+// Elapsed time: 1095 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, two_digits_counter_on_2_7segment_display (two_digits_counter_on_2_7segment_display_Nexys4ddr.v), U2 : clk_divider_1hz_behavior (clk_divider_1hz_behavior.v)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, two_digits_counter_on_2_7segment_display (two_digits_counter_on_2_7segment_display_Nexys4ddr.v), U2 : clk_divider_1hz_behavior (clk_divider_1hz_behavior.v)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, two_digits_counter_on_2_7segment_display (two_digits_counter_on_2_7segment_display_Nexys4ddr.v), U7 : clk_divider_about_500hz_refresh_rate_2display (clk_divider_about_500hz_refresh_rate_2display.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, two_digits_counter_on_2_7segment_display (two_digits_counter_on_2_7segment_display_Nexys4ddr.v), U7 : clk_divider_about_500hz_refresh_rate_2display (clk_divider_about_500hz_refresh_rate_2display.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 275 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_divider_1hz_behavior.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "two_digits_counter_on_2_7segment_display_Nexys4ddr.v", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 29, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// [GUI Memory]: 165 MB (+1240kb) [00:27:23]
+// Elapsed time: 113 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_divider_about_500hz_refresh_rate_2display.v", 4); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,710 MB. GUI used memory: 98 MB. Current time: 5/9/19, 4:24:15 PM EDT

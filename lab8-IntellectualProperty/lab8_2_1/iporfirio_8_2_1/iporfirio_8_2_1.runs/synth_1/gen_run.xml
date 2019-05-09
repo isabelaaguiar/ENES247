@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557429881">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557431523">
   <File Type="PA-TCL" Name="two_digits_counter_on_2_7segment_display.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="two_digits_counter_on_2_7segment_display_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="two_digits_counter_on_2_7segment_display_reports.tcl"/>

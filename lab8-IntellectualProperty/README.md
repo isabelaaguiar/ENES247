@@ -97,7 +97,9 @@ Circuit display the sum of binary 4-bit input as 7-segment diaplay (2 digits).
 
 ![1557427568558](1557427568558.png)
 
+Used the IP generator to create the binary counter. Set restrict count to 9 and threshold output to 9.
 
+So 9 is the maximum count for each digit.  When counter reaches 9, it goes back to 0 and starts over.
 
 ![1557427819125](1557427819125.png)
 
@@ -113,7 +115,9 @@ Behavioral modeling created to generate 1 Hz precise signal to drive the counter
 
 Terminal count = 2625A0 hex = 2.5MHz (Half of the 5Mhz)
 
+### Hierarchy
 
+![1557431794837](1557431794837.png)
 
 ### RTL Schematic
 
