@@ -2,7 +2,7 @@ Isabela Porfirio de Aguiar
 
 # Lab 8
 
-## LAB 8_1_1
+## LAB 8_1_1 - Clock devider behavior
 
 #### Verilog Code
 
@@ -38,7 +38,7 @@ Need to choose 5Hz frequency because of the code having reg[22:0]
 
 
 
-## LAB_8_1_2
+## LAB_8_1_2 - Binary 2bcd on 2 7segment
 
 ### Verilog code:
 
@@ -54,19 +54,17 @@ Need to choose 5Hz frequency because of the code having reg[22:0]
 
 
 
-### RTL Schematic
+### RTL Schematic - 
 
 
 
 ![1557420350194](1557420350194.png)
 
-
+clicking on the + sign of clk_wiz_0:
 
 ![1557420390091](1557420390091.png)
 
 
-
-![1557420472867](1557420472867.png)
 
 
 
@@ -93,3 +91,53 @@ Circuit display the sum of binary 4-bit input as 7-segment diaplay (2 digits).
 
 
 
+## LAB_8_2_1 - Two digits counter on 2 7 segment display
+
+### Verilog code:
+
+![1557427568558](1557427568558.png)
+
+
+
+![1557427819125](1557427819125.png)
+
+Needed to create a clk wizard of output 5MHz, using IP catalog. Then change names in the code, for the name of the clk wiz created.
+
+Also needed to create a binary counter using IP catalog (counting from 0 to 9). Also needed to change the name of the counter in the code, for the one I created.
+
+
+
+### RTL Schematic
+
+
+
+![1557427317189](1557427317189.png)
+
+clicking on the + sign of clk_wiz_0:
+
+![1557427447490](1557427447490.png)
+
+
+
+### Implementation
+
+![1557427694174](1557427694174.png)
+
+
+
+
+
+### Testing
+
+When enable is 1, counter starts counting from zero or from where it last stopped, adding one unit for each clock pulse. 
+
+Two digits of the 7 segment display are being used. Each digit counts from 0 to 9, so counter goes from 0 to 99, then goes back to 00 and start counting over again. 
+
+When reset is pressed (M18 button), the counter is reset and starts counting from 00 again. Enable needs to be 1 for reset to work.
+
+
+
+
+
+In lab 8, learned about the architectural wizard and the IP Catalog of the Vivado tool. Used the
+architectural wizard to generate a 5 MHz clock and the IP Catalog to generate a counter. 
