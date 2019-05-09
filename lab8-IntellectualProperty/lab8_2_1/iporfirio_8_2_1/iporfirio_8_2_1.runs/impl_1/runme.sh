@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log two_digits_counter_on_2_7segment_display.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source two_digits_counter_on_2_7segment_display.tcl -notrace
 
 

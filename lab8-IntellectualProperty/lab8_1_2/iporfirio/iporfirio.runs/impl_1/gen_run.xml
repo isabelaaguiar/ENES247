@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557419988">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557429218">
   <File Type="BITSTR-BMM" Name="binary2bcd_on_2_7segment_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="binary2bcd_on_2_7segment_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="binary2bcd_on_2_7segment_timing_summary_init.rpt"/>

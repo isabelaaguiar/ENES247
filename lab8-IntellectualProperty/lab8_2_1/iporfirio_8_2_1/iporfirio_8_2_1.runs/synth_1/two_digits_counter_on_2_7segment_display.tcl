@@ -38,12 +38,12 @@ read_verilog -library xil_defaultlib {
   C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/two_bcd_2_7segment_display.v
   C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/two_digits_counter_on_2_7segment_display_Nexys4ddr.v
 }
-read_ip -quiet c:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+read_ip -quiet C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet c:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci
+read_ip -quiet C:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/SET253-13U.HCCMAIN/Documents/GitHub/ENES247/lab8-IntellectualProperty/lab8_2_1/iporfirio_8_2_1/iporfirio_8_2_1.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

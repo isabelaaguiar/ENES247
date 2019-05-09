@@ -101,19 +101,27 @@ Circuit display the sum of binary 4-bit input as 7-segment diaplay (2 digits).
 
 ![1557427819125](1557427819125.png)
 
+
+
 Needed to create a clk wizard of output 5MHz, using IP catalog. Then change names in the code, for the name of the clk wiz created.
 
 Also needed to create a binary counter using IP catalog (counting from 0 to 9). Also needed to change the name of the counter in the code, for the one I created.
+
+![1557431076994](1557431076994.png)
+
+Behavioral modeling created to generate 1 Hz precise signal to drive the counters.
+
+Terminal count = 2625A0 hex = 2.5MHz (Half of the 5Mhz)
 
 
 
 ### RTL Schematic
 
-
-
 ![1557427317189](1557427317189.png)
 
 clicking on the + sign of clk_wiz_0:
+
+
 
 ![1557427447490](1557427447490.png)
 
