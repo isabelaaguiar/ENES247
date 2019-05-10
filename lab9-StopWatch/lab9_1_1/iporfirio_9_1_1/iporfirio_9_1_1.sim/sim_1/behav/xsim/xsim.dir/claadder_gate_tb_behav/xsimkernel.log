@@ -1,7 +1,7 @@
-Running: xsim.dir/claadder_gate_tb_behav/xsimk.exe -simmode gui -wdb claadder_gate_tb_behav.wdb -simrunnum 0 -socket 53466
+Running: xsim.dir/claadder_gate_tb_behav/xsimk.exe -simmode gui -wdb claadder_gate_tb_behav.wdb -simrunnum 0 -socket 50773
 Design successfully loaded
-Design Loading Memory Usage: 5604 KB (Peak: 5604 KB)
-Design Loading CPU Usage: 31 ms
+Design Loading Memory Usage: 5608 KB (Peak: 5608 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 6356 KB (Peak: 6356 KB)
-Simulation CPU Usage: 31 ms
+Simulation Memory Usage: 6352 KB (Peak: 6352 KB)
+Simulation CPU Usage: 15 ms
