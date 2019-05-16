@@ -1,0 +1,39 @@
+
+*** Running vivado
+    with args -log updown_ctr_core.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source updown_ctr_core.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source updown_ctr_core.tcl -notrace
+Command: synth_design -top updown_ctr_core -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10404 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 406.102 ; gain = 99.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'updown_ctr_core' [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/updown_ctr_core_dsp48.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clk_5MHz' [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.runs/synth_1/.Xil/Vivado-3636-SET253-14C/realtime/clk_5MHz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_5MHz' (1#1) [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.runs/synth_1/.Xil/Vivado-3636-SET253-14C/realtime/clk_5MHz_stub.v:5]
+WARNING: [Synth 8-350] instance 'U1' of module 'clk_5MHz' requires 3 connections, but only 2 given [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/updown_ctr_core_dsp48.v:16]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/updown_ctr_core_dsp48.v:45]
+INFO: [Synth 8-6157] synthesizing module 'counter_8Bit_dsp48' [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.runs/synth_1/.Xil/Vivado-3636-SET253-14C/realtime/counter_8Bit_dsp48_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_8Bit_dsp48' (2#1) [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.runs/synth_1/.Xil/Vivado-3636-SET253-14C/realtime/counter_8Bit_dsp48_stub.v:6]
+ERROR: [Synth 8-448] named port connection 'CE' does not exist for instance 'U2' of module 'counter_8Bit_dsp48' [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/updown_ctr_core_dsp48.v:47]
+ERROR: [Synth 8-448] named port connection 'SCLR' does not exist for instance 'U2' of module 'counter_8Bit_dsp48' [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/updown_ctr_core_dsp48.v:48]
+ERROR: [Synth 8-6156] failed synthesizing module 'updown_ctr_core' [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/updown_ctr_core_dsp48.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 462.109 ; gain = 155.672
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu May 16 14:28:43 2019...

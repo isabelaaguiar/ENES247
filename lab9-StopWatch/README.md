@@ -18,9 +18,7 @@ LAB 9
 
 #### RTL
 
-![1557505861068](C:\Users\SET253-19U.HCCMAIN\AppData\Roaming\Typora\typora-user-images\1557505861068.png)
-
-
+![1558030466238](1558030466238.png)
 
 p and g are look-ahead adders that improve the speed by reducing the amount of time required to determine carry bits.
 
@@ -60,9 +58,10 @@ For this part (9_1_2), the parameters were not defined in the main verilog code.
 
 #### RTL
 
-![1557505861068](C:\Users\SET253-19U.HCCMAIN\AppData\Roaming\Typora\typora-user-images\1557505861068.png)
+![1558030593166](1558030593166.png)
 
 RTL did not change
+
 
 
 
@@ -75,4 +74,124 @@ RTL did not change
 Defparam statements were added to the testbench , changing the values of the delays.
 
 
+
+
+
+## Lab 9_2_1 - Updown Counter
+
+#### Verilog Code
+
+![1558021815494](1558021815494.png)
+
+Needed to create a clk win with output 5MHz and name it clk_5MHz, as in the verilog code. 
+
+Line 17 "wire CLk_5MHz" was previously named as "wire clk_5MHz" , same as the clock wiz. It did not work like that. Needed to change it, so they had different names, because they are not the same thing.
+
+
+
+### RTL
+
+![1558023945330](1558023945330.png)
+
+### Implementation
+
+![1558021677237](1558021677237.png)
+
+
+
+### Testing
+
+Counter counts in binary from 255 (2^7+2^6+2^5+2^4+2^3+2^3+2^1+2^0) down to zero. It starts at 255 and subtracts 1 at each positive clock pulse. This happens when enable(Sw[0])=1 and up_dn(SW[1])=0. 
+
+If enable(Sw[0])=1 and up_dn(SW[1])=1, the counter counts up insted. It counts from 0, adding 1 at each positive clock pulse. If  up_dn(SW[1]) is switched from 1 to 0 or 0 to 1 in the middle of the counting, it does not start over again. It simply changes the way it is counting (up or down), but from the number it was before.
+
+Enable(Sw[0]) blocks the clock. If enable = 0, the counter stops. If enable is turned back to 1, counter starts from where it stopped. 
+
+M18 resets the counter, making it start over again from 255 (if up_dn(SW[1])=1), or from 0 (if up_dn(SW[1])=0).
+
+
+
+## Lab 9_2_2 - Updown Counter
+
+#### Verilog Code
+
+![1558025032469](1558025032469.png)
+
+Code is basically the same as previous. 
+
+The only different liine:
+
+(* use_dsp48 = "yes" *)
+
+
+
+What changed?
+
+
+
+
+
+Clk_wiz
+
+![1558025837469](1558025837469.png)
+
+
+
+### RTL
+
+
+
+![1558025917865](1558025917865.png)
+
+
+
+### Implementation
+
+![1558025147180](1558025147180.png)
+
+
+
+
+
+### Testing
+
+Counter does the same as before.
+
+Counts up or down.
+
+
+
+## Lab 9_2_3 
+
+#### Verilog Code
+
+![1558029461510](1558029461510.png)
+
+Commented line 49 because it is not needed. 
+
+THe counter already has the function on it. Adding this line to the code creates a conflict.
+
+
+
+### RTL
+
+![1558029505413](1558029505413.png)
+
+
+
+### Implementation
+
+![1558028392553](1558028392553.png)
+
+
+
+### Testing
+
+Counts from 0 to  21.
+
+
+
+## Lab 9_2_4 
+
+#### Verilog Code
 
