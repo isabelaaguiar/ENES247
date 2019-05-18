@@ -1,11 +1,11 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Thu May 16 14:21:47 2019
--- Host        : SET253-14C running 64-bit major release  (build 9200)
+-- Date        : Sat May 18 14:38:50 2019
+-- Host        : SET165-13C running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/clk_5MHz/clk_5MHz_sim_netlist.vhdl
--- Design      : clk_5MHz
+--               c:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/CLK_5MHz/CLK_5MHz_sim_netlist.vhdl
+-- Design      : CLK_5MHz
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7a100tcsg324-1
@@ -14,21 +14,21 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity clk_5MHz_clk_5MHz_clk_wiz is
+entity CLK_5MHz_CLK_5MHz_clk_wiz is
   port (
     clk_out1 : out STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of clk_5MHz_clk_5MHz_clk_wiz : entity is "clk_5MHz_clk_wiz";
-end clk_5MHz_clk_5MHz_clk_wiz;
+  attribute ORIG_REF_NAME of CLK_5MHz_CLK_5MHz_clk_wiz : entity is "CLK_5MHz_clk_wiz";
+end CLK_5MHz_CLK_5MHz_clk_wiz;
 
-architecture STRUCTURE of clk_5MHz_clk_5MHz_clk_wiz is
-  signal clk_in1_clk_5MHz : STD_LOGIC;
-  signal clk_out1_clk_5MHz : STD_LOGIC;
-  signal clkfbout_buf_clk_5MHz : STD_LOGIC;
-  signal clkfbout_clk_5MHz : STD_LOGIC;
+architecture STRUCTURE of CLK_5MHz_CLK_5MHz_clk_wiz is
+  signal clk_in1_CLK_5MHz : STD_LOGIC;
+  signal clk_out1_CLK_5MHz : STD_LOGIC;
+  signal clkfbout_CLK_5MHz : STD_LOGIC;
+  signal clkfbout_buf_CLK_5MHz : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED : STD_LOGIC;
@@ -59,8 +59,8 @@ architecture STRUCTURE of clk_5MHz_clk_5MHz_clk_wiz is
 begin
 clkf_buf: unisim.vcomponents.BUFG
      port map (
-      I => clkfbout_clk_5MHz,
-      O => clkfbout_buf_clk_5MHz
+      I => clkfbout_CLK_5MHz,
+      O => clkfbout_buf_CLK_5MHz
     );
 clkin1_ibufg: unisim.vcomponents.IBUF
     generic map(
@@ -68,11 +68,11 @@ clkin1_ibufg: unisim.vcomponents.IBUF
     )
         port map (
       I => clk_in1,
-      O => clk_in1_clk_5MHz
+      O => clk_in1_CLK_5MHz
     );
 clkout1_buf: unisim.vcomponents.BUFG
      port map (
-      I => clk_out1_clk_5MHz,
+      I => clk_out1_CLK_5MHz,
       O => clk_out1
     );
 mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
@@ -127,15 +127,15 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       STARTUP_WAIT => false
     )
         port map (
-      CLKFBIN => clkfbout_buf_clk_5MHz,
-      CLKFBOUT => clkfbout_clk_5MHz,
+      CLKFBIN => clkfbout_buf_CLK_5MHz,
+      CLKFBOUT => clkfbout_CLK_5MHz,
       CLKFBOUTB => NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED,
       CLKFBSTOPPED => NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED,
-      CLKIN1 => clk_in1_clk_5MHz,
+      CLKIN1 => clk_in1_CLK_5MHz,
       CLKIN2 => '0',
       CLKINSEL => '1',
       CLKINSTOPPED => NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED,
-      CLKOUT0 => clk_out1_clk_5MHz,
+      CLKOUT0 => clk_out1_CLK_5MHz,
       CLKOUT0B => NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED,
       CLKOUT1 => NLW_mmcm_adv_inst_CLKOUT1_UNCONNECTED,
       CLKOUT1B => NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED,
@@ -166,19 +166,19 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity clk_5MHz is
+entity CLK_5MHz is
   port (
     clk_out1 : out STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of clk_5MHz : entity is true;
-end clk_5MHz;
+  attribute NotValidForBitStream of CLK_5MHz : entity is true;
+end CLK_5MHz;
 
-architecture STRUCTURE of clk_5MHz is
+architecture STRUCTURE of CLK_5MHz is
 begin
-inst: entity work.clk_5MHz_clk_5MHz_clk_wiz
+inst: entity work.CLK_5MHz_CLK_5MHz_clk_wiz
      port map (
       clk_in1 => clk_in1,
       clk_out1 => clk_out1,

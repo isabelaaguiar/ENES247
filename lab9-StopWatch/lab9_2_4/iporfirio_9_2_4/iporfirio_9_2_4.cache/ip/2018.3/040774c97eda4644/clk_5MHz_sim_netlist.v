@@ -1,11 +1,11 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Thu May 16 14:21:47 2019
-// Host        : SET253-14C running 64-bit major release  (build 9200)
+// Date        : Sat May 18 14:38:50 2019
+// Host        : SET165-13C running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
-//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ clk_5MHz_sim_netlist.v
-// Design      : clk_5MHz
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ CLK_5MHz_sim_netlist.v
+// Design      : CLK_5MHz
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7a100tcsg324-1
@@ -25,13 +25,13 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   wire clk_out1;
   wire locked;
 
-  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_clk_5MHz_clk_wiz inst
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_CLK_5MHz_clk_wiz inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
         .locked(locked));
 endmodule
 
-module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_clk_5MHz_clk_wiz
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_CLK_5MHz_clk_wiz
    (clk_out1,
     locked,
     clk_in1);
@@ -40,11 +40,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_clk_5MHz_clk_wiz
   input clk_in1;
 
   wire clk_in1;
-  wire clk_in1_clk_5MHz;
+  wire clk_in1_CLK_5MHz;
   wire clk_out1;
-  wire clk_out1_clk_5MHz;
-  wire clkfbout_buf_clk_5MHz;
-  wire clkfbout_clk_5MHz;
+  wire clk_out1_CLK_5MHz;
+  wire clkfbout_CLK_5MHz;
+  wire clkfbout_buf_CLK_5MHz;
   wire locked;
   wire NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED;
@@ -65,8 +65,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_clk_5MHz_clk_wiz
 
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFG clkf_buf
-       (.I(clkfbout_clk_5MHz),
-        .O(clkfbout_buf_clk_5MHz));
+       (.I(clkfbout_CLK_5MHz),
+        .O(clkfbout_buf_CLK_5MHz));
   (* BOX_TYPE = "PRIMITIVE" *) 
   (* CAPACITANCE = "DONT_CARE" *) 
   (* IBUF_DELAY_VALUE = "0" *) 
@@ -75,10 +75,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_clk_5MHz_clk_wiz
     .IOSTANDARD("DEFAULT")) 
     clkin1_ibufg
        (.I(clk_in1),
-        .O(clk_in1_clk_5MHz));
+        .O(clk_in1_CLK_5MHz));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFG clkout1_buf
-       (.I(clk_out1_clk_5MHz),
+       (.I(clk_out1_CLK_5MHz),
         .O(clk_out1));
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
@@ -131,15 +131,15 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_clk_5MHz_clk_wiz
     .SS_MOD_PERIOD(10000),
     .STARTUP_WAIT("FALSE")) 
     mmcm_adv_inst
-       (.CLKFBIN(clkfbout_buf_clk_5MHz),
-        .CLKFBOUT(clkfbout_clk_5MHz),
+       (.CLKFBIN(clkfbout_buf_CLK_5MHz),
+        .CLKFBOUT(clkfbout_CLK_5MHz),
         .CLKFBOUTB(NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED),
         .CLKFBSTOPPED(NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED),
-        .CLKIN1(clk_in1_clk_5MHz),
+        .CLKIN1(clk_in1_CLK_5MHz),
         .CLKIN2(1'b0),
         .CLKINSEL(1'b1),
         .CLKINSTOPPED(NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED),
-        .CLKOUT0(clk_out1_clk_5MHz),
+        .CLKOUT0(clk_out1_CLK_5MHz),
         .CLKOUT0B(NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED),
         .CLKOUT1(NLW_mmcm_adv_inst_CLKOUT1_UNCONNECTED),
         .CLKOUT1B(NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED),

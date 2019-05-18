@@ -17,28 +17,29 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.cache/wt [current_project]
-set_property parent.project_path C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.cache/wt [current_project]
+set_property parent.project_path C:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.cache/ip [current_project]
+set_property ip_output_repo c:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/updown_ctr_core_dsp48.v
-read_ip -quiet c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/clk_5MHz/clk_5MHz.xci
-set_property used_in_implementation false [get_files -all c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/clk_5MHz/clk_5MHz_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/clk_5MHz/clk_5MHz.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/clk_5MHz/clk_5MHz_ooc.xdc]
+read_verilog -library xil_defaultlib C:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/updown_ctr_core_dsp48.v
+read_ip -quiet c:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/CLK_5MHz/CLK_5MHz.xci
+set_property used_in_implementation false [get_files -all c:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/CLK_5MHz/CLK_5MHz_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/CLK_5MHz/CLK_5MHz.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/CLK_5MHz/CLK_5MHz_ooc.xdc]
 
-read_ip -quiet c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/counter_8Bit_dsp48/counter_8Bit_dsp48.xci
-set_property used_in_implementation false [get_files -all c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/counter_8Bit_dsp48/counter_8Bit_dsp48_ooc.xdc]
+read_ip -quiet c:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/counter_8Bit_dsp48/counter_8Bit_dsp48.xci
+set_property used_in_implementation false [get_files -all c:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.srcs/sources_1/ip/counter_8Bit_dsp48/counter_8Bit_dsp48_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -48,8 +49,8 @@ set_property used_in_implementation false [get_files -all c:/Users/SET253-14U.HC
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/Nexys4DDR_Master.xdc]
+read_xdc C:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/Nexys4DDR_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/Nexys4DDR_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

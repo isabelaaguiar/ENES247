@@ -55,6 +55,8 @@
 COMPONENT counter_8Bit_dsp48
   PORT (
     CLK : IN STD_LOGIC;
+    CE : IN STD_LOGIC;
+    SCLR : IN STD_LOGIC;
     UP : IN STD_LOGIC;
     Q : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
   );
@@ -68,6 +70,8 @@ END COMPONENT;
 your_instance_name : counter_8Bit_dsp48
   PORT MAP (
     CLK => CLK,
+    CE => CE,
+    SCLR => SCLR,
     UP => UP,
     Q => Q
   );

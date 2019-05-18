@@ -123,15 +123,14 @@ The only different liine:
 
 (* use_dsp48 = "yes" *)
 
-
-
-What changed?
-
-
+The USE_DSP48 attribute overrides the default behavior and forces these structures into DSP48
+blocks. The attribute can be placed in the RTL on signals and modules.
 
 
 
-Clk_wiz
+
+
+##### Clk_wiz
 
 ![1558025837469](1558025837469.png)
 
@@ -187,11 +186,148 @@ THe counter already has the function on it. Adding this line to the code creates
 
 ### Testing
 
-Counts from 0 to  21.
+This design of  8-Bit up/down counter was done using the IP Catalog. Set the setting to use the fabric.
+
 
 
 
 ## Lab 9_2_4 
 
 #### Verilog Code
+
+![1558202793629](1558202793629.png)
+
+
+
+#### RTL
+
+![1558202658723](1558202658723.png)
+
+
+
+
+
+
+
+#### Implementation
+
+
+
+![1558202563034](1558202563034.png)
+
+
+
+![1558202595575](1558202595575.png)
+
+
+
+
+
+### Testing
+
+This design of  8-Bit up/down counter was done using the IP Catalog. Set the setting to use the DSP48 slices, instead of use the fabric.
+
+
+
+## Lab 9_3_1 Stop Watch
+
+#### Verilog Code
+
+![1558210208329](1558210208329.png)
+
+
+
+
+
+#### RTL
+
+![1558210601136](1558210601136.png)
+
+
+
+#### 
+
+#### Implementation
+
+
+
+![1558210529789](1558210529789.png)
+
+
+
+#### Testing
+
+Counter counts up to 5 minutes, and displays miliseconds, seconds and minutes separetally.
+
+When enable is 0, counter stops. When turned back to 1, counter continues from where it stopped. 
+
+Reset button restarts clock from 0. 
+
+When counter reaches 5 minutes, it starts over.
+
+
+
+
+
+
+
+
+
+
+
+## Lab 9_3_2
+
+#### Verilog Code
+
+![1558211491734](1558211491734.png)
+
+#### RTL
+
+![1558211931857](1558211931857.png)
+
+Zooming on RTL:
+
+![1558211975482](1558211975482.png)
+
+
+
+![1558212037380](1558212037380.png)
+
+
+
+![1558212094806](1558212094806.png)
+
+
+
+#### Implementation
+
+![1558211386572](1558211386572.png)
+
+
+
+
+
+## Lab 9_3_3
+
+#### Verilog Code
+
+![1558213156342](1558213156342.png)
+
+
+
+
+
+#### RTL
+
+![1558213356744](1558213356744.png)
+
+
+
+
+
+
+
+#### Implementation
+
+![1558213304456](1558213304456.png)
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1558031281">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1558205990">
   <File Type="PA-TCL" Name="updown_ctr_core.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="updown_ctr_core_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="updown_ctr_core_reports.tcl"/>
@@ -48,6 +48,6 @@
     </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="clk_5MHz"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLK_5MHz"/>
   <BlockFileSet Type="BlockSrcs" Name="counter_8Bit_dsp48"/>
 </GenRun>

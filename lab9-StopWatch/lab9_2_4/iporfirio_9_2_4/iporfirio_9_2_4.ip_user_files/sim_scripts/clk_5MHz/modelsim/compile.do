@@ -14,8 +14,8 @@ vcom -work xpm -64 -93 \
 "C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../ipstatic" \
-"../../../../iporfirio_9_2_4.srcs/sources_1/ip/clk_5MHz/clk_5MHz_clk_wiz.v" \
-"../../../../iporfirio_9_2_4.srcs/sources_1/ip/clk_5MHz/clk_5MHz.v" \
+"../../../../iporfirio_9_2_4.srcs/sources_1/ip/CLK_5MHz/CLK_5MHz_clk_wiz.v" \
+"../../../../iporfirio_9_2_4.srcs/sources_1/ip/CLK_5MHz/CLK_5MHz.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

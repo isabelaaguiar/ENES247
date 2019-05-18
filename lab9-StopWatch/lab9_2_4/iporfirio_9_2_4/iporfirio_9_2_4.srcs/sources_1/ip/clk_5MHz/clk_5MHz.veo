@@ -68,7 +68,7 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 
-  clk_5MHz instance_name
+  CLK_5MHz instance_name
    (
     // Clock out ports
     .clk_out1(clk_out1),     // output clk_out1

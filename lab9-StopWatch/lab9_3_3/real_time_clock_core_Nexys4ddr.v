@@ -22,7 +22,7 @@ module real_time_clock_core(
    wire [3:0] s_cnt_m, s_cnt_l;   
     wire thresh0, thresh1;
    
-   clk_5MHz U1
+   CLK_5MHz U1
    (
      .clk_in1(clk),      
      .clk_out1(CLK_5MHz));     

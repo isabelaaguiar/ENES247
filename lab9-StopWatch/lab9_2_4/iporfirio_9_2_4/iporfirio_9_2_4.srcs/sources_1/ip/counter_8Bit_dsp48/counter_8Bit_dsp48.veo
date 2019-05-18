@@ -55,9 +55,11 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 counter_8Bit_dsp48 your_instance_name (
-  .CLK(CLK),  // input wire CLK
-  .UP(UP),    // input wire UP
-  .Q(Q)      // output wire [7 : 0] Q
+  .CLK(CLK),    // input wire CLK
+  .CE(CE),      // input wire CE
+  .SCLR(SCLR),  // input wire SCLR
+  .UP(UP),      // input wire UP
+  .Q(Q)        // output wire [7 : 0] Q
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

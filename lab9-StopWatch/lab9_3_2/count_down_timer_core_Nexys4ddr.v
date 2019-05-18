@@ -27,7 +27,7 @@ module count_down_timer_core(
    parameter [2:0] S0=0, S1=1, S2=2, S3=3, S4=4, S5=5, S6=6;
    
    
-   clk_5MHz U1
+   CLK_5MHz U1
    (
      .clk_in1(clk),      
      .clk_out1(CLK_5MHz));     

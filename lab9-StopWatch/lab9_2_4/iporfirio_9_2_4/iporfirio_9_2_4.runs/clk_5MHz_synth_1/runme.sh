@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.runs/clk_5MHz_synth_1'
+HD_PWD='C:/Users/SET165-13U/Documents/GitHub/ENES247/lab9-StopWatch/lab9_2_4/iporfirio_9_2_4/iporfirio_9_2_4.runs/CLK_5MHz_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log clk_5MHz.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_5MHz.tcl
+EAStep vivado -log CLK_5MHz.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CLK_5MHz.tcl
