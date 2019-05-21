@@ -48,6 +48,12 @@ On Vivado, I could click on the edges and observe that the difference in time be
 
 Can see modification in the code, from the previous one.
 
+
+
+Why does not the main code has the #(3, 3, 4)  lines anymore?
+
+
+
 In part 1 (9_1_1). the parameters were defined in the main verilog code. Can see the  #(3, 3, 4) in the code. And passed to the modules. 
 
 For this part (9_1_2), the parameters were not defined in the main verilog code. Instead, the "defparam"
