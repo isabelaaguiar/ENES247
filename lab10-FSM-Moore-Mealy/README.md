@@ -68,8 +68,6 @@ The output depends on the current state and on the current inputs.
 
 
 
-
-
 #### Verilog Code
 
 ![1558531913463](1558531913463.png)
@@ -103,3 +101,60 @@ Need the clock pulse to change state.
 When in State 0 and State 1, yout = 0.
 
 When in State 2 and State 3, yout = 1.
+
+
+
+
+
+## Lab 10_1_3 Mealy ROM
+
+Design a specific counts counter using ROM to develop a Mealy state machine.
+
+The counting sequence will be: 000, 001, 011, 101, 111, 010 (repeat) 000, …
+
+
+
+#### Verilog Code
+
+![1558553053449](1558553053449.png)
+
+Count_ROM module code:
+
+![1558553085697](1558553085697.png)
+
+
+
+ROM is being used to define the specific counting, assigning them to each state.
+
+
+
+#### RTL
+
+![1558553146093](1558553146093.png)
+
+
+
+#### Implementation
+
+![1558552924968](1558552924968.png)
+
+
+
+
+
+#### Testbench
+
+![1558554553807](1558554553807.png)
+
+The testbench works
+
+
+
+#### Testing
+
+![1558554245493](1558554245493.png)
+
+At each positive edge of clock, changes to next state if reset is 0, or changes to state 0 if reset = 1.
+
+When in state 5, it chages bach to state 0 for both reset = 0 and reset = 1.
+
