@@ -40,3 +40,4 @@ update_compile_order -fileset sim_1
 update_compile_order -fileset sim_1
 launch_simulation
 source mealy_ROM_tb.tcl
+close_sim
