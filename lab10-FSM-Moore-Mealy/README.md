@@ -56,3 +56,50 @@ Each clock pulse adds one to the four bit output count[3:0]. When count is a mul
 
 The output depends on the current state and on the current inputs. 
 
+
+
+#### State diagram 
+
+![1558533068703](1558533068703.png)
+
+
+
+## Lab 10_1_2 Moore 
+
+
+
+
+
+#### Verilog Code
+
+![1558531913463](1558531913463.png)
+
+
+
+#### RTL
+
+![1558532075552](1558532075552.png)
+
+
+
+
+
+#### State Diagram
+
+![1558533142935](1558533142935.png)
+
+
+
+#### Testing
+
+In a Mealy machine, the output depends only on the present (current) state.
+
+Reset takes it back to State 0.
+
+Need the clock pulse to change state.
+
+
+
+When in State 0 and State 1, yout = 0.
+
+When in State 2 and State 3, yout = 1.

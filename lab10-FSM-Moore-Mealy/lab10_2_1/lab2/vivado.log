@@ -2,32 +2,36 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Mar  8 14:44:33 2019
-# Process ID: 9784
-# Current directory: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11900 C:\Users\SET253-17U.HCCMAIN\Documents\GitHub\ENES247\lab10-FSM-Moore-Mealy\lab10_2_1\lab2\lab2.xpr
-# Log file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/vivado.log
-# Journal file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2\vivado.jou
+# Start of session at: Wed May 22 09:25:55 2019
+# Process ID: 6612
+# Current directory: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5436 C:\Users\SET253-14U.HCCMAIN\Documents\GitHub\ENES247\lab10-FSM-Moore-Mealy\lab10_2_1\lab2\lab2.xpr
+# Log file: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/vivado.log
+# Journal file: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.xpr
+open_project C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.xpr
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2'
-INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-18U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2' since last save.
+Current project path is 'C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2'
+INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.ip_user_files', nor could it be found using path 'C:/Users/SET253-18U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.ip_user_files'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.ip_user_files', nor could it be found using path 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 717.270 ; gain = 111.656
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 723.477 ; gain = 122.105
 update_compile_order -fileset sources_1
 reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed May 22 09:26:53 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed May 22 09:28:11 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/impl_1/runme.log
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Fri Mar  8 14:47:45 2019] Launched synth_1...
-Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/synth_1/runme.log
-[Fri Mar  8 14:47:45 2019] Launched impl_1...
-Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/impl_1/runme.log
+[Wed May 22 09:29:26 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/impl_1/runme.log
 open_hw
 connect_hw_server
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -40,64 +44,73 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4022BA
-set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/impl_1/moore_sequence_detector_3processes.bit} [get_hw_devices xc7a100t_0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBCBA
+set_property PROGRAM.FILE {C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/impl_1/moore_sequence_detector_3processes.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/impl_1/moore_sequence_detector_3processes.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/impl_1/moore_sequence_detector_3processes.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-close_project
-****** Webtalk v2018.3 (64-bit)
-  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: moore_sequence_detector_3processes
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1813.676 ; gain = 80.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'moore_sequence_detector_3processes' [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/moore_sequence_detector_3processes.v:6]
+	Parameter S0 bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+	Parameter S2 bound to: 2'b10 
+	Parameter S3 bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/moore_sequence_detector_3processes.v:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/moore_sequence_detector_3processes.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'moore_sequence_detector_3processes' (1#1) [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/moore_sequence_detector_3processes.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1851.121 ; gain = 117.770
+---------------------------------------------------------------------------------
 
-source C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.hw/webtalk/labtool_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Fri Mar  8 15:13:33 2019...
-open_project C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_3_1/lab3/lab3.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_3_1/lab3'
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Fri Mar  8 15:23:14 2019] Launched synth_1...
-Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_3_1/lab3/lab3.runs/synth_1/runme.log
-[Fri Mar  8 15:23:14 2019] Launched impl_1...
-Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_3_1/lab3/lab3.runs/impl_1/runme.log
-open_hw
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1851.121 ; gain = 117.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1851.121 ; gain = 117.770
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
 
-****** Xilinx hw_server v2018.3
-  **** Build date : Dec  7 2018-00:40:27
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
 
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2147.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
 
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4022BA
-set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_3_1/lab3/lab3.runs/impl_1/mealy_ROM.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_3_1/lab3/lab3.runs/impl_1/mealy_ROM.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Mar  8 17:09:14 2019...
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2207.184 ; gain = 473.832
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2207.184 ; gain = 473.832
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6EBCBA
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/moore_sequence_detector_3processes_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1

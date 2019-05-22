@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/impl_1'
+HD_PWD='C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log moore_sequence_detector_3processes.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source moore_sequence_detector_3processes.tcl -notrace
 
 
